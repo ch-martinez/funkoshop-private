@@ -1,8 +1,3 @@
-.header{
-    background-color: var(--bg-dark-solid);
-    padding: var(--spacing-36);
-}
-
 .navbar{
     display: flex;
     align-items: center;
@@ -38,7 +33,6 @@
     background-color: var(--primary-900);
 }
 
-
 .whit-icon{
     display: flex;
     align-items: center;
@@ -58,13 +52,4 @@
     position: absolute;
     background-color: var(--bg-dark-solid);
     z-index: 10;
-}
-
-
-.submenu__item{
-    display: block;
-}
-
-.submenu__item:hover {
-    background-color: var(--primary-900);
 }

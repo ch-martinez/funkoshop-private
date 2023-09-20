@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/public/img/favicon.ico"/>
     <link rel="stylesheet" href="/public/styles/index.css">
     <title>FunkoShop</title>
 </head>
 <body>
-    <header class="header">
+    <header class="container-menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
@@ -78,25 +79,27 @@
         </section>
 
     </main>
-    <footer>
-        <section>
-            <ul>
+    <footer class="container-menu">
+        <section class="navbar navbar--footer container">
+            <ul class="navbar__menu--footer">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="">SHOP</a>
+                    <a class="navbar__link" href="/public/pages/shop/shop.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="">LOGIN</a>
+                    <a class="navbar__link" href="/public/pages/admin/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="">CONTACTO</a>
+                    <a class="navbar__link" href="/public/pages/contact.html">CONTACTO</a>
                 </li>
             </ul>
-            <picture>
-                <img src="" alt="">
+            <picture class="navbar-footer__logo">
+                <a href="/index.html">
+                    <img src="/public/img/branding/isotype.svg" alt="FunkoShop Logo">
+                </a>
             </picture>
         </section>
         
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>

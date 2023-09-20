@@ -18,7 +18,6 @@
 .btn-round{
     display: inline-block;
     padding: var(--spacing-12) var(--spacing-68);
-    margin-top: var(--spacing-48);
     color: var(--font-light-solid);
     font-size: var(--font-medium);
     font-weight: 500;

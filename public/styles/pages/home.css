@@ -1,0 +1,46 @@
+.hero{
+    position: relative;
+    background-image: url(/public/img/funkos-banner.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0);
+    backdrop-filter: blur(2px) brightness(.9);
+}
+
+.hero__content{
+    position: relative;
+    padding: var(--spacing-100) 0;
+    color: var(--font-light-solid);
+    font-family: var(--font-alternative);
+    z-index: 1;
+}
+
+.hero__title{
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.hero__description{
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+.btn-round--hero{
+    margin-top: var(--spacing-48);
+    color: var(--bg-dark-solid);
+    background-color: var(--bg-light-solid);
+}
+
+.btn-round--hero:hover{
+    background-color: var(--primary-solid);
+    color: var(--font-light-solid);
+}

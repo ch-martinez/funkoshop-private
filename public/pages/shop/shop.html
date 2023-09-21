@@ -44,8 +44,189 @@
             </ul>
         </nav>
     </header>
-    <main class="container test">
-        <h1>CONTENIDO</h1>
+    <main class="container container--shop">
+        <aside class="filters__container">
+            <form class="filters__form" action="">
+                <div class="filter">
+                    <label class="filter__label" for="search">BUSCAR</label>
+                    <input class="filter__input" id="search" type="text" placeholder="Item o categoria">
+                </div>
+
+                <div class="filter">
+                    <label class="filter__label" for="short">ORDENAR POR</label>
+                    <select class="filter__input" name="short" id="short">
+                        <option value="precio_mayor">Mayor precio</option>
+                        <option value="precio_menor">Menor precio</option>
+                        <option value="nombre_az">Nombre A-Z</option>
+                        <option value="nombre_za">Nombre Z-A</option>
+                        <option value="destacado">Destacados</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <label class="filter__label">PRECIO</label>
+                    <div class="filter--price">
+                        <label class="filter__sublabel" for="min_price">MIN<input class="filter__input filter__input--price" type="number" placeholder="0" min="0">-</label>
+                        <label class="filter__sublabel" for="max_price">MAX<input class="filter__input filter__input--price" type="number" placeholder="0" min="0"></label>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <label class="filter__label">FILTRAR</label>
+                    <ul>
+                        <li class="filter__li">
+                            <label class="filter__sublabel" for="check_new">
+                                <input class="filter__input" type="checkbox" name="check_new" id="check_new">NUEVOS
+                            </label>
+                        </li>
+                        <li class="filter__li">
+                            <label class="filter__sublabel" for="check_offer">
+                                <input class="filter__input" type="checkbox" name="check_offer" id="check_offer">OFERTAS
+                            </label>
+                        </li>
+                        <li class="filter__li">
+                            <label class="filter__sublabel" for="check_special">
+                                <input class="filter__input" type="checkbox" name="check_special" id="check_special">EDICIÓN ESPECIAL
+                            </label>
+                        </li>
+                        <li class="filter__li">
+                            <label class="filter__sublabel" for="check_fav">
+                                <input class="filter__input" type="checkbox" name="check_fav" id="check_fav">FAVORITOS
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </aside>
+
+        <section class="shop__container">
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/star-wars/trooper-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">star wars</span>
+                    <h4 class="card__name">stormtrooper lightsaber</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/pokemon/pidgeotto-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">pokemon</span>
+                    <h4 class="card__name">pidgeotto</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/harry-potter/luna-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">harry potter</span>
+                    <h4 class="card__name">luna lovegood</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/star-wars/trooper-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">star wars</span>
+                    <h4 class="card__name">stormtrooper lightsaber</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/pokemon/pidgeotto-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">pokemon</span>
+                    <h4 class="card__name">pidgeotto</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/harry-potter/luna-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">harry potter</span>
+                    <h4 class="card__name">luna lovegood</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/star-wars/trooper-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">star wars</span>
+                    <h4 class="card__name">stormtrooper lightsaber</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/pokemon/pidgeotto-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">pokemon</span>
+                    <h4 class="card__name">pidgeotto</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+            <article class="card new-item">
+                <picture class="card__picture">
+                    <a href="/">
+                        <img src="/public/img/harry-potter/luna-1.webp" alt="">
+                    </a>
+                </picture>
+                <section class="card__content">
+                    <span class="card__collection">harry potter</span>
+                    <h4 class="card__name">luna lovegood</h4>
+                    <span class="card__price">$ 1799,99</span>
+                    <span class="card__payments">3 cuotas sin interés</span>
+                </section>
+            </article>
+
+        </section>
     </main>
     <footer class="container-menu">
         <section class="navbar navbar--footer container">

@@ -47,6 +47,10 @@
 
 /* Seccion de collecciones */
 
+.collections__container{
+    margin: var(--spacing-68) 0;
+}
+
 .collection{
     display: flex;
     justify-content: space-between;
@@ -84,4 +88,17 @@
     margin: var(--spacing-28) 0;
     border: 1px solid var(--primary-solid);
     border-radius: 20px;
+}
+
+/* Seccion ultimos lanzamientos */
+
+.last-releases__title{
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+
+.last-releases__container{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--spacing-68) 0;
 }

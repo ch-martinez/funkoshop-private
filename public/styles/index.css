@@ -10,6 +10,9 @@
 /* Pages */
 @import url('/public/styles/pages/home.css');
 
+
+/* Componentes */
 @import url('/public/styles/components/header.css');
 @import url('/public/styles/components/footer.css');
+@import url('/public/styles/components/card.css');
 

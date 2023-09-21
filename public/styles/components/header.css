@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+    max-width: 300px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    color: var(--font-light-solid);
+    font: var(--font-alternative);
+    font-size: var(--font-medium-20);
+    font-weight: 500;
+}
+
+.navbar__link{
+    display: inline-block;
+    position: relative;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+}
+
+.navbar__item{
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__item:hover{
+    background-color: var(--primary-900);
+}
+
+.whit-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.cart-icon:hover{
+    background-color: inherit;
+}
+
+.whit-submenu:hover .submenu{
+    display: inline-block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: var(--bg-dark-solid);
+    z-index: 10;
+}

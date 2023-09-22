@@ -8,16 +8,19 @@
     <title>FS - Shop</title>
 </head>
 <body>
-    <header class="container-menu">
+    <!-- Inicio header -->
+    <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
                     <img src="/public/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
+            <!-- Menu de navegacion -->
             <ul class="navbar__menu">
                 <li class="navbar__item whit-submenu">
                     <a class="navbar__link whit-icon" href="/public/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <!-- Submenu desplegable de productos -->
                     <ul class="submenu">
                         <li class="submenu__item navbar__item">
                             <a class="navbar__link" href="/public/pages/shop/funkos.html">FUNKOS</a>
@@ -44,14 +47,17 @@
             </ul>
         </nav>
     </header>
-    <main class="container container--shop">
+
+    <main class="container container--main container--shop">
+        <!-- Seccion lateral con filtros de busqueda y orden -->
         <aside class="filters__container">
             <form class="filters__form" action="">
+                <!-- Buscar por item o categoria -->
                 <div class="filter">
                     <label class="filter__label" for="search">BUSCAR</label>
                     <input class="filter__input" id="search" type="text" placeholder="Item o categoria">
                 </div>
-
+                <!-- Ordenar items -->
                 <div class="filter">
                     <label class="filter__label" for="short">ORDENAR POR</label>
                     <select class="filter__input" name="short" id="short">
@@ -62,7 +68,7 @@
                         <option value="destacado">Destacados</option>
                     </select>
                 </div>
-
+                <!-- Filtrar items por precio -->
                 <div class="filter">
                     <label class="filter__label">PRECIO</label>
                     <div class="filter--price">
@@ -70,7 +76,7 @@
                         <label class="filter__sublabel" for="max_price">MAX<input class="filter__input filter__input--price" type="number" placeholder="0" min="0"></label>
                     </div>
                 </div>
-
+                <!-- Filtrar items segun caracteristicas -->
                 <div class="filter">
                     <label class="filter__label">FILTRAR</label>
                     <ul>
@@ -99,6 +105,7 @@
             </form>
         </aside>
 
+        <!-- Listado de items -->
         <section class="shop__container">
             <article class="card new-item">
                 <picture class="card__picture">
@@ -228,8 +235,10 @@
 
         </section>
     </main>
-    <footer class="container-menu">
+    <!-- Inicio footer -->
+    <footer class="container--menu">
         <section class="navbar navbar--footer container">
+            <!-- Menu de navegacion footer -->
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
                     <a class="navbar__link" href="/public/pages/shop/shop.html">SHOP</a>
@@ -247,7 +256,7 @@
                 </a>
             </picture>
         </section>
-        
+        <!-- Pie de pagina -->
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

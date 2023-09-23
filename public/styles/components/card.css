@@ -53,3 +53,11 @@
     display: flex;
     justify-content: space-around;
 }
+
+/* Seccion carousel*/
+
+.carousel__title{
+    font-size: var(--font-display);
+    font-weight: 700;
+    margin: var(--spacing-68) 0;
+}

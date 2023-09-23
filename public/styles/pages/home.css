@@ -84,11 +84,3 @@
     border: 1px solid var(--primary-solid);
     border-radius: 20px;
 }
-
-/* Seccion ultimos lanzamientos */
-
-.carousel__title{
-    font-size: var(--font-display);
-    font-weight: 700;
-    margin: var(--spacing-68) 0;
-}

@@ -19,6 +19,8 @@
     height: 65vh;
 }
 
+/* Buttons */
+
 .btn-round{
     display: inline-block;
     padding: var(--spacing-12) var(--spacing-68);
@@ -42,7 +44,6 @@
     color: var(--font-light-solid);
     font-size: var(--font-small);
 }
-
 
 /* Cantidad de items a cargar */
 

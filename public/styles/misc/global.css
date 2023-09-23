@@ -34,3 +34,53 @@
 .btn-round:hover{
     background-color: var(--primary-solid);
 }
+
+.btn-square{
+    display: inline-block;
+    padding: var(--spacing-8) var(--spacing-16);
+    background-color: var(--primary-solid);
+    color: var(--font-light-solid);
+    font-size: var(--font-small);
+}
+
+
+/* Cantidad de items a cargar */
+
+.quantity__container{
+    display: flex;
+    gap: var(--spacing-8);
+}
+
+.quantity-btn__container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.quantity-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    background-color: var(--dark-500);
+    color: var(--font-light-solid);
+    font-weight: 700;
+}
+
+.quantity__input{
+    width: 100px;
+    appearance: none;
+    border: 2px solid var(--border-gray);
+    font-size: var(--font-medium);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Hidde arrows of input number */
+.input-hide-arrows::-webkit-outer-spin-button,
+.input-hide-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

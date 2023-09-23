@@ -47,3 +47,9 @@
     background-color: var(--primary-solid);
     padding: var(--spacing-8) var(--spacing-16);
 }
+
+/* Contenedor de las cards */
+.cards__container{
+    display: flex;
+    justify-content: space-around;
+}

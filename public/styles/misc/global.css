@@ -5,6 +5,8 @@
 
 .container--main{
     padding: var(--spacing-68) 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Container de header y footer */

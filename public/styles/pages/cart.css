@@ -1,0 +1,130 @@
+/* Global */
+.cart-box{
+    background-color: var(--bg-light-solid);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container--cartlist-page{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cart list */
+.container--cartlist{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0 var(--spacing-36);
+
+}
+
+td span{
+    display: inline-block;
+    width: 100px;
+}
+
+.table__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.table__data{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.table__data--head{
+    font-size: var(--font-medium);
+    font-weight: 700;
+    text-align: center;
+}
+
+.table__data--body{
+    text-align: center;
+}
+
+.table__data--body:first-child{
+    justify-content: start;
+    background-color: aqua;
+}
+
+.data__content{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16);
+}
+
+.data__content .card__content{
+    text-align: start;
+}
+
+.quantity__container--table{
+    display: flex;
+    justify-items: center;
+}
+
+.card__picture--cart{
+    display: inline-block;
+    width: 150px;
+}
+
+.card__content--table{
+    min-width: 350px;
+}
+
+/* Resumen */
+
+.container--resumen{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.container--resumen > .container__title{
+    align-self: end;
+}
+
+.resumen__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    margin-bottom: 44px;
+    min-width: 500px;
+    padding: var(--spacing-24);
+    gap: var(--spacing-20);
+}
+
+.resumen__div{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-medium);
+    font-weight: 600;
+}
+
+.resumen__div span:last-child{
+    font-weight: 700;
+    color: #747474;
+}
+
+.resumen__div:last-child{
+    padding-top: var(--spacing-8);
+    border-top: 2px solid #F33;
+    font-size: var(--font-medium-20);
+    font-weight: 700;
+}
+
+.btn-square--resumen{
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+}
+
+.resumen__content .collection__line{
+    margin: 0;
+}

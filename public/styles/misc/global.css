@@ -13,6 +13,16 @@
     background-color: var(--bg-dark-solid);
 }
 
+.container__title{
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--font-alternative);
+    font-size: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 5px solid var(--primary-solid);
+}
+
 .test{
     display: flex;
     place-items: center;
@@ -43,6 +53,7 @@
     background-color: var(--primary-solid);
     color: var(--font-light-solid);
     font-size: var(--font-small);
+    text-align: center;
 }
 
 /* Cantidad de items a cargar */

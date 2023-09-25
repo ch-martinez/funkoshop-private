@@ -1,5 +1,6 @@
 .container--shop{
     display: flex;
+    flex-direction: row;
 }
 
 .filters__form{

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/public/styles/index.css">
     <title>FS - Registrar</title>
 </head>
-<body>
+<body>    <!-- Inicio header -->
     <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
@@ -15,9 +15,11 @@
                     <img src="/public/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
+            <!-- Menu de navegacion -->
             <ul class="navbar__menu">
                 <li class="navbar__item whit-submenu">
                     <a class="navbar__link whit-icon" href="/public/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <!-- Submenu desplegable de productos -->
                     <ul class="submenu">
                         <li class="submenu__item navbar__item">
                             <a class="navbar__link" href="/public/pages/shop/funkos.html">FUNKOS</a>
@@ -44,11 +46,42 @@
             </ul>
         </nav>
     </header>
-    <main class="container test">
-        <h1>CONTENIDO</h1>
+
+    <main class="container container--main container--login">
+        <h2 class="container__title">INGRESAR A MI CUENTA</h2>
+        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+        <form action="" class="login__form">
+            <div class="form__box">
+                <label class="login__label" for="">Nombre:</label>
+                <input class="login__input" type="text" name="name">
+            </div>
+            <div class="form__box">
+                <label class="login__label" for="">Apellido:</label>
+                <input class="login__input" type="text" name="lastname">
+            </div>
+            <div class="form__box">
+                <label class="login__label" for="">E-mail:</label>
+                <input class="login__input" type="email" name="email">
+            </div>
+            <div class="form__box">
+                <label class="login__label" for="">Contraseña:</label>
+                <input class="login__input" type="password" name="pass">
+            </div>
+            <div class="form__box">
+                <label class="login__label" for="">Repetir Contraseña:</label>
+                <input class="login__input" type="password" name="pass">
+            </div>
+            <div class="form__box form__box--submit">
+                <input class="btn-square form__submit" type="submit" value="Registrar">
+                <label class="filter__sublabel  filter__sublabel--terms" for="">
+                    <input class="filter__input" type="checkbox">Acepto<a href="" class="">Términos y Condiciones</a></label>
+            </div>
+        </form>
     </main>
+    <!-- Inicio footer -->
     <footer class="container--menu">
         <section class="navbar navbar--footer container">
+            <!-- Menu de navegacion footer -->
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
                     <a class="navbar__link" href="/public/pages/shop/shop.html">SHOP</a>
@@ -66,7 +99,7 @@
                 </a>
             </picture>
         </section>
-        
+        <!-- Pie de pagina -->
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

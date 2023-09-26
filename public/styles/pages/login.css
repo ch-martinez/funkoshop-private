@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: var(--spacing-36);
+    gap: var(--spacing-20);
 }
 
 .form__box--submit{
@@ -35,7 +35,6 @@
 
 .login__input{
     display: inline-block;
-    padding: 4px;
     font-size: var(--font-medium);
     border: none;
     border-bottom: 2px solid var(--primary-solid);
@@ -43,4 +42,23 @@
 
 .login__input:focus{
     outline: none;
+}
+
+.form__submit{
+    border-style: none;
+}
+
+.filter__sublabel--terms{
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.filter__sublabel--terms a{
+    color: var(--secondary-solid);
+}
+
+.container--login p{
+    font-size: var(--font-large);
+    font-weight: 500;
+    align-self: center;
 }

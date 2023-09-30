@@ -22,7 +22,7 @@
     flex-direction: column;
 }
 
-table{
+.table--cart{
     border-collapse: separate;
     border-spacing: 0 var(--spacing-36);
 }

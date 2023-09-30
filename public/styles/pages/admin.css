@@ -58,6 +58,11 @@
     width: 100%;
 }
 
+.table--cart{
+    border-collapse: separate;
+    border-spacing: 0 var(--spacing-36);
+}
+
 .list__data{
     font-size: var(--font-large);
     font-weight: 500;

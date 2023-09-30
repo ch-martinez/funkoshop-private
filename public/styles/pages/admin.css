@@ -55,15 +55,17 @@
 
 /* list items */
 .list__table{
+    border-collapse: separate;
     width: 100%;
+    border-spacing: 0;
 }
 
-.table--cart{
-    border-collapse: separate;
-    border-spacing: 0 var(--spacing-36);
+.list__row{
+    padding: 5px;
 }
 
 .list__data{
+    padding: 5px 20px;
     font-size: var(--font-large);
     font-weight: 500;
 }
@@ -80,6 +82,7 @@
     gap: var(--spacing-42);
 }
 
-.list__row:nth-child(even){
-    background-color: var(--row-even);
+/* Colorear las filas impar */
+.list__row:nth-child(odd){
+    background-color: var(--row-odd);
 }

@@ -44,7 +44,6 @@
     padding: 10px;
     font-size: var(--font-medium-20);
     font-weight: 500;
-    appearance: none;
     border: 2px solid #30343F;
     border-radius: 6px;
 }
@@ -54,6 +53,21 @@
     padding: 0 10px;
     width: 60px;
 }
+
+/* Input checkbox */
+.filter__input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    outline: solid 2px;
+    outline-offset: -2px;
+    -moz-outline-radius: ;
+}
+
+.filter__input[type="checkbox"]:checked{
+    accent-color: var(--primary-solid);
+    outline: none;
+}
+
 
 /* -------------- */
 

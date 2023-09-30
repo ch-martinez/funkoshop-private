@@ -1,0 +1,80 @@
+.container--admin{
+    padding: var(--spacing-68) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+}
+
+.admin-search__container{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.admin-search__container picture{
+    display: inline-block;
+    width: 42px;
+}
+
+.admin-search__input{
+    min-width: 530px;
+}
+
+/*  */
+.list-head__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-head__title{
+    font-size: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 1.68px;
+}
+
+.list-head__add{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.list-head__add picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-solid);
+    border-radius: 5px;
+
+}
+
+/* list items */
+.list__table{
+    width: 100%;
+}
+
+.list__data{
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+
+.list__data--head{
+    text-align: left;
+    font-weight: 700;
+}
+
+/* Iconos editar y borrar */
+.list__row .list__data:last-child{
+    display: flex;
+    justify-content: end;
+    gap: var(--spacing-42);
+}
+
+.list__row:nth-child(even){
+    background-color: var(--row-even);
+}

@@ -50,7 +50,7 @@
 
     <main class="container container--main container--login">
         <h2 class="container__title">INGRESAR A MI CUENTA</h2>
-        <form action="" class="login__form">
+        <form action="/public/pages/admin/admin.html" class="login__form">
             <div class="form__box">
                 <label class="login__label" for="">E-mail:</label>
                 <input class="login__input" type="email" name="email">
@@ -63,7 +63,10 @@
                 <input class="btn-square form__submit" type="submit" value="Ingresar">
                 <label class="filter__sublabel" for=""><input class="filter__input" type="checkbox"> Recordarme</label>
             </div>
-            <a href="" class="card__payments">Olvidé mi contraseña</a>
+            <div>
+                <a href="" class="card__payments">Olvidé mi contraseña</a>  | 
+                <a href="/public/pages/admin/register.html" class="card__payments">Registrar</a>
+            </div>
         </form>
     </main>
     <!-- Inicio footer -->

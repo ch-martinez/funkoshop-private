@@ -11,6 +11,7 @@
     --secondary-300: rgb(29, 132, 181, 0.3);
 
     --border-gray: #C9C9C9;
+    --row-even:#ececec;
 
     --dark-solid: #1F1F1F;
     --dark-900: rgb(31, 31, 31, 0.9);
@@ -40,6 +41,7 @@
     --spacing-100: 10rem;
     --spacing-68: 6.8rem;
     --spacing-48: 4.8rem;
+    --spacing-42: 4.2rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;

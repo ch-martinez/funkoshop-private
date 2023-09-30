@@ -7,13 +7,16 @@
 @import url('/public/styles/misc/normalize.css');
 @import url('/public/styles/misc/global.css');
 
-/* Pages */
-@import url('/public/styles/pages/home.css');
-@import url('/public/styles/pages/shop.css');
-
-
 /* Componentes */
 @import url('/public/styles/components/header.css');
 @import url('/public/styles/components/footer.css');
 @import url('/public/styles/components/card.css');
+@import url('/public/styles/components/item.css');
+
+/* Pages */
+@import url('/public/styles/pages/home.css');
+@import url('/public/styles/pages/shop.css');
+@import url('/public/styles/pages/cart.css');
+@import url('/public/styles/pages/login.css');
+@import url('/public/styles/pages/admin.css');
 

@@ -1,5 +1,6 @@
 .container--shop{
     display: flex;
+    flex-direction: row;
 }
 
 .filters__form{
@@ -52,13 +53,6 @@
     text-align: center;
     padding: 0 10px;
     width: 60px;
-}
-
-/* Hidde arrows of input number */
-.filter__input--price::-webkit-outer-spin-button,
-.filter__input--price::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 /* -------------- */

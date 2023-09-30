@@ -8,7 +8,7 @@
     <title>FS - Admin</title>
 </head>
 <body>
-    <header class="container-menu">
+    <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
@@ -44,10 +44,241 @@
             </ul>
         </nav>
     </header>
-    <main class="container test">
-        <h1>CONTENIDO</h1>
+
+    <main class="container container--admin">
+        <!-- Seccion de busqueda item -->
+        <section class="admin-search__container">
+            <picture>
+                <img src="/public/img/icons/search_icon.svg" alt="Buscar item">
+            </picture>
+            <input class="filter__input admin-search__input" type="text" placeholder="Código, nombre o categoria">
+        </section>
+        <!-- Cabecera de tabla para agregar item -->
+        <section class="list-head__container">
+            <h1 class="list-head__title">LISTADO DE PRODUCTOS</h1>
+            <div>
+                <a class="list-head__add" href="">
+                    <span>AGREGAR</span>
+                    <picture>
+                        <img src="/public/img/icons/+.svg" alt="Agregar item">
+                    </picture>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Listado de items -->
+        <table class="list__table">
+            <thead>
+                <tr>
+                    <th class="list__data--head list__data">ID</t>
+                    <th class="list__data--head list__data">Código</th>
+                    <th class="list__data--head list__data">Nombre del producto</th>
+                    <th class="list__data--head list__data" colspan="2">Categoria</th>
+                </tr>
+                <tbody>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">1</td>
+                        <td class="list__data">STW001001</td>
+                        <td class="list__data">Baby Yoda Blueball</td>
+                        <td class="list__data">STAR WARS</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">2</td>
+                        <td class="list__data">STW001002</td>
+                        <td class="list__data">Boba Fett Fighter</td>
+                        <td class="list__data">STAR WARS</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">3</td>
+                        <td class="list__data">STW001003</td>
+                        <td class="list__data">Luke Skylwalker & Grogu</td>
+                        <td class="list__data">STAR WARS</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">4</td>
+                        <td class="list__data">STW001004</td>
+                        <td class="list__data">Stormtrooper Lightsaber</td>
+                        <td class="list__data">STAR WARS</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">5</td>
+                        <td class="list__data">PKM001001</td>
+                        <td class="list__data">Charmander Smiley</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">6</td>
+                        <td class="list__data">PKM001002</td>
+                        <td class="list__data">Dragonite Hi!</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                                        <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">7</td>
+                        <td class="list__data">PKM001003</td>
+                        <td class="list__data">Pidgeotto Flying</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">8</td>
+                        <td class="list__data">PKM001004</td>
+                        <td class="list__data">Pikachu Smiley</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">9</td>
+                        <td class="list__data">PKM001005</td>
+                        <td class="list__data">Vulpix Fancy</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">10</td>
+                        <td class="list__data">HPT001001</td>
+                        <td class="list__data">Harry Potter & Hegwid</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">11</td>
+                        <td class="list__data">HPT001002</td>
+                        <td class="list__data">Herminione Ball Dress</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">12</td>
+                        <td class="list__data">HPT001003</td>
+                        <td class="list__data">Luna Lovegood Lion Mask</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Fila de tabla -->
+                    <tr class="list__row">
+                        <td class="list__data">13</td>
+                        <td class="list__data">HPT001004</td>
+                        <td class="list__data">Snape Patronus</td>
+                        <td class="list__data">POKEMON</td>
+                        <td class="list__data">
+                            <a href="">
+                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                            </a>
+                        </td>
+                    </tr>
+
+
+
+                </tbody>
+            </thead>
+        </table>
     </main>
-    <footer class="container-menu">
+    <footer class="container--menu">
         <section class="navbar navbar--footer container">
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">

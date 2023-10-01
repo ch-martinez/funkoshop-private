@@ -54,13 +54,13 @@
             <form class="filters__form" action="">
                 <!-- Buscar por item o categoria -->
                 <div class="filter">
-                    <label class="filter__label" for="search">BUSCAR</label>
-                    <input class="filter__input" id="search" type="text" placeholder="Item o categoria">
+                    <label class="label label--filter" for="search">BUSCAR</label>
+                    <input class="input-text--box" id="search" type="text" placeholder="Item o categoria">
                 </div>
                 <!-- Ordenar items -->
                 <div class="filter">
-                    <label class="filter__label" for="short">ORDENAR POR</label>
-                    <select class="filter__input" name="short" id="short">
+                    <label class="label label--filter" for="short">ORDENAR POR</label>
+                    <select class="input-select" name="short" id="short">
                         <option value="precio_mayor">Mayor precio</option>
                         <option value="precio_menor">Menor precio</option>
                         <option value="nombre_az">Nombre A-Z</option>
@@ -70,35 +70,31 @@
                 </div>
                 <!-- Filtrar items por precio -->
                 <div class="filter">
-                    <label class="filter__label">PRECIO</label>
+                    <label class="label label--filter">PRECIO</label>
                     <div class="filter--price">
-                        <label class="filter__sublabel" for="min_price">MIN<input class="filter__input filter__input--price input-hide-arrows" type="number" placeholder="0" min="0">-</label>
-                        <label class="filter__sublabel" for="max_price">MAX<input class="filter__input filter__input--price input-hide-arrows" type="number" placeholder="0" min="0"></label>
+                        <label class="label--filter-price" for="min_price">MIN<input class="input-number input-hide-arrows" type="number" placeholder="0" min="0">-</label>
+                        <label class="label--filter-price" for="max_price">MAX<input class="input-number input-hide-arrows" type="number" placeholder="0" min="0"></label>
                     </div>
                 </div>
                 <!-- Filtrar items segun caracteristicas -->
                 <div class="filter">
-                    <label class="filter__label">FILTRAR</label>
+                    <label class="label label--filter">FILTRAR</label>
                     <ul>
                         <li class="filter__li">
-                            <label class="filter__sublabel" for="check_new">
-                                <input class="filter__input" type="checkbox" name="check_new" id="check_new">NUEVOS
-                            </label>
+                            <input class="input-checkbox" type="checkbox" name="check_new" id="check_new">
+                            <label class="label--checkbox" for="check_new">NUEVOS</label>
                         </li>
                         <li class="filter__li">
-                            <label class="filter__sublabel" for="check_offer">
-                                <input class="filter__input" type="checkbox" name="check_offer" id="check_offer">OFERTAS
-                            </label>
+                            <input class="input-checkbox" type="checkbox" name="check_offer" id="check_offer">
+                            <label class="label--checkbox" for="check_offer">OFERTAS</label>
                         </li>
                         <li class="filter__li">
-                            <label class="filter__sublabel" for="check_special">
-                                <input class="filter__input" type="checkbox" name="check_special" id="check_special">EDICIÓN ESPECIAL
-                            </label>
+                            <input class="input-checkbox" type="checkbox" name="check_special" id="check_special">
+                            <label class="label--checkbox" for="check_special">EDICIÓN ESPECIAL</label>
                         </li>
                         <li class="filter__li">
-                            <label class="filter__sublabel" for="check_fav">
-                                <input class="filter__input" type="checkbox" name="check_fav" id="check_fav">FAVORITOS
-                            </label>
+                            <input class="input-checkbox" type="checkbox" name="check_fav" id="check_fav">
+                            <label class="label--checkbox" for="check_fav">FAVORITOS</label>
                         </li>
                     </ul>
                 </div>

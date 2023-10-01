@@ -1,0 +1,14 @@
+.admin-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-48);
+    width: 100%;
+}
+
+
+.admin-item__container{
+    display: flex;
+    gap: var(--spacing-12);
+    align-items: center;
+    padding: var(--spacing-8) 0;
+}

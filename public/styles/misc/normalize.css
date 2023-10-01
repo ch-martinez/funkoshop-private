@@ -31,7 +31,8 @@ img {
     width: 100%;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder{
     color: var(--dark-300);
     font-family: var(--font-base);
     font-weight: 500;

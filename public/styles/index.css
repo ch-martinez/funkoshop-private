@@ -13,7 +13,6 @@
 @import url('/public/styles/components/card.css');
 @import url('/public/styles/components/item.css');
 @import url('/public/styles/components/label-inputs.css');
-@import url('/public/styles/components/admin__form.css');
 
 /* Pages */
 @import url('/public/styles/pages/home.css');
@@ -21,4 +20,5 @@
 @import url('/public/styles/pages/cart.css');
 @import url('/public/styles/pages/login.css');
 @import url('/public/styles/pages/admin.css');
+@import url('/public/styles/pages/create_modify.css');
 

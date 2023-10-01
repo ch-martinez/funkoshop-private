@@ -1,0 +1,64 @@
+.create-modify{
+    width: 80%;
+    margin-top: var(--spacing-48);
+    display: grid;
+    grid-template-areas:
+        "categoria categoria liciencia liciencia"
+        "nombre nombre nombre nombre"
+        "descripcion descripcion descripcion descripcion" 
+        "sku sku precio stock"
+        "descuento cuotas . ."
+        "imagen imagen imagen ."
+        "botones botones . .";
+    gap: var(--spacing-48);
+}
+
+.create-modify__item{
+    grid-column: 1/3;
+    display: flex;
+    gap: var(--spacing-16);
+    align-items: center;
+}
+
+.create-modify__item:nth-child(1){
+    grid-area: categoria;
+}
+
+.create-modify__item:nth-child(2){
+    grid-area: liciencia;
+}
+
+.create-modify__item:nth-child(3){
+    grid-area: nombre;
+}
+
+.create-modify__item:nth-child(4){
+    grid-area: descripcion;
+}
+
+.create-modify__item:nth-child(5){
+    grid-area: sku;
+}
+.create-modify__item:nth-child(6){
+    grid-area: precio;
+}
+
+.create-modify__item:nth-child(7){
+    grid-area: stock;
+}
+
+.create-modify__item:nth-child(8){
+    grid-area: descuento;
+}
+
+.create-modify__item:nth-child(9){
+    grid-area: cuotas;
+}
+
+.create-modify__item:nth-child(10){
+    grid-area: imagen;
+}
+
+.create-modify__item:last-child{
+    grid-area: botones;
+}

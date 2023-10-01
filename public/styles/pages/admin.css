@@ -37,8 +37,11 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-20);
+    padding: var(--spacing-8);
     font-size: var(--font-large);
     font-weight: 700;
+    border-radius: 10px;
+    transition: var(--transition--01);
 }
 
 .list-head__add picture{
@@ -51,6 +54,10 @@
     background-color: var(--primary-solid);
     border-radius: 5px;
 
+}
+
+.list-head__add:hover{
+    background-color: var(--gray--300);
 }
 
 /* list items */

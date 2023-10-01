@@ -34,11 +34,3 @@
 .item__price{
     font-size: var(--font-jumbo);
 }
-
-.item__payments{
-    font-size: var(--font-xsmall);
-    font-weight: 700;
-    color: var(--secondary-solid);
-    text-decoration-line: underline;
-}
-

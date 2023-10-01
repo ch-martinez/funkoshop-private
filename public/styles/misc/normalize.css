@@ -31,7 +31,7 @@ img {
     width: 100%;
 }
 
-input[type="text"]::placeholder {
+input::placeholder {
     color: var(--dark-300);
     font-family: var(--font-base);
     font-weight: 500;

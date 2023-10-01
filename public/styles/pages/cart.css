@@ -46,13 +46,10 @@
     text-align: start;
 }
 
-.quantity__container--table{
+/* Fix center amount in table */
+.amount--table{
     width: fit-content;
     margin: 0 auto;
-}
-
-.quantity-btn--cart{
-    background-color: var(--primary-solid);
 }
 
 .table__delet{
@@ -100,7 +97,7 @@
     font-weight: 700;
 }
 
-.btn-square--resumen{
+.btn-link--resumen{
     font-size: var(--font-xlarge);
     font-weight: 700;
 }

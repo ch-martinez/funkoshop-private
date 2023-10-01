@@ -12,6 +12,7 @@
 
     --border-gray: #C9C9C9;
     --row-odd:#ececec;
+    --gray--300:#ececec;
 
     --dark-solid: #1F1F1F;
     --dark-900: rgb(31, 31, 31, 0.9);
@@ -49,4 +50,7 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+
+    /* Transitions */
+    --transition--01: all 0.2s ease-in-out;
 }

@@ -52,16 +52,19 @@
         <h2 class="container__title">INGRESAR A MI CUENTA</h2>
         <form action="/public/pages/admin/admin.html" class="login__form">
             <div class="form__box">
-                <label class="login__label" for="">E-mail:</label>
-                <input class="login__input" type="email" name="email">
+                <label class="label" for="">E-mail:</label>
+                <input class="input-text" type="email" name="email">
             </div>
             <div class="form__box">
-                <label class="login__label" for="">Contraseña:</label>
-                <input class="login__input" type="password" name="pass">
+                <label class="label" for="">Contraseña:</label>
+                <input class="input-text" type="password" name="pass">
             </div>
             <div class="form__box form__box--submit">
-                <input class="btn-square form__submit" type="submit" value="Ingresar">
-                <label class="filter__sublabel" for=""><input class="filter__input" type="checkbox"> Recordarme</label>
+                <input class="btn form__submit" type="submit" value="Ingresar">
+                <div class="remember__container">
+                    <label class="label--checkbox" for="">
+                    <input class="input-checkbox" type="checkbox">Recordarme</label>
+                </div>
             </div>
             <div>
                 <a href="" class="card__payments">Olvidé mi contraseña</a>  | 
@@ -69,6 +72,7 @@
             </div>
         </form>
     </main>
+
     <!-- Inicio footer -->
     <footer class="container--menu">
         <section class="navbar navbar--footer container">

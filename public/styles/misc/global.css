@@ -67,6 +67,7 @@
     width: 18px;
     height: 18px;
     padding: 4px;
+    font-size: 0rem;
     background-color: var(--dark-500);
     transition: var(--transition--01);
 }

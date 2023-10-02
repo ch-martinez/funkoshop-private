@@ -1,6 +1,7 @@
 .container--shop{
     display: flex;
     flex-direction: row;
+    
 }
 
 /* Filters aside */

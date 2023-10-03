@@ -13,6 +13,7 @@
 @import url('/public/styles/components/card.css');
 @import url('/public/styles/components/item.css');
 @import url('/public/styles/components/label-inputs.css');
+@import url('/public/styles/misc/animations.css');
 
 /* Pages */
 @import url('/public/styles/pages/home.css');

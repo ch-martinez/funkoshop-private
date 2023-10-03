@@ -73,10 +73,6 @@
     justify-content: space-around;
 }
 
-.card__cover img{
-    animation: fade 1.7s;
-}
-
 .card__img-front{
 }
 
@@ -90,4 +86,8 @@
 
 .card__cover:hover .card__img-back{
     display: block;
+}
+
+.card__cover img{
+    animation: fade 0.7s;
 }

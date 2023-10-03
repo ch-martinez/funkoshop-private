@@ -46,19 +46,23 @@
     text-align: start;
 }
 
-.quantity__container--table{
+/* Fix center amount in table */
+.amount--table{
     width: fit-content;
     margin: 0 auto;
 }
 
-.quantity-btn--cart{
-    background-color: var(--primary-solid);
-}
-
 .table__delet{
+    font-size: 0rem;
     display: inline-block;
     width: 28px;
+    border-radius: 100%;
+    transition: var(--transition--01);
 }
+
+    .table__delet:hover{
+        background-color: var(--primary-300);
+    }
 
 /* Resumen */
 .container--resumen{
@@ -100,7 +104,7 @@
     font-weight: 700;
 }
 
-.btn-square--resumen{
+.btn-link--resumen{
     font-size: var(--font-xlarge);
     font-weight: 700;
 }

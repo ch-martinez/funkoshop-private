@@ -1,6 +1,13 @@
 .container--shop{
     display: flex;
     flex-direction: row;
+    
+}
+
+/* Filters aside */
+
+.filters__container{
+    padding-right: var(--spacing-20);
 }
 
 .filters__form{
@@ -8,8 +15,6 @@
     flex-direction: column;
     gap: var(--spacing-28);
 }
-
-/* Filter containers */
 
 .filter{
     display: flex;
@@ -22,45 +27,15 @@
     gap: 10px;
 }
 
-/* Filters labels */
-
-.filter__label{
-    font-size: var(--font-large);
-    font-weight: 500;
-}
-
-.filter__sublabel{
+.filter__li{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: var(--font-medium);
-    font-weight: 500;
-}
-
-/* Filter inputs */
-
-.filter__input{
-    max-width: 250px;
-    padding: 10px;
-    font-size: var(--font-medium-20);
-    font-weight: 500;
-    appearance: none;
-    border: 2px solid #30343F;
-    border-radius: 6px;
-}
-
-.filter__input--price{
-    text-align: center;
-    padding: 0 10px;
-    width: 60px;
-}
-
-/* -------------- */
-
-.filter__li{
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+/*  */
 
 .shop__container{
     display: grid;

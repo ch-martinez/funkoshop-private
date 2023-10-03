@@ -60,63 +60,66 @@
                 <span class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</span>
                 <span class="item__price">$ 1799,99</span>
                 <!-- Contenedor para la cantidad a agregar de items al carrito -->
-                <div class="quantity__container">
-                    <input class="quantity__input input-hide-arrows" type="number" value="1" min="1">
-                    <div class="quantity-btn__container">
-                        <a class="quantity-btn" href=""><img src="/public/img/icons/+.svg" alt=""></a>
-                        <a class="quantity-btn" href=""><img src="/public/img/icons/-.svg" alt="" srcset=""></a>
+                <div class="amount">
+                    <input class="amount__input input-hide-arrows" type="number" value="1" min="1">
+                    <div class="amount__btn-container">
+                        <a class="amount__btn" href=""><img src="/public/img/icons/+.svg" alt=""></a>
+                        <a class="amount__btn" href=""><img src="/public/img/icons/-.svg" alt="" srcset=""></a>
                     </div>
-                    <a class="btn-square" href="http://">Agregar al carrito</a>
+                    <a class="btn-link" href="http://">Agregar al carrito</a>
                 </div>
-                <a class="item__payments" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <a class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
             </section>
         </article>
 
         <!-- Seccion de relacionados -->
-        <section class="carousel__container">
+        <section class="carousel">
             <h2 class="carousel__title">PRODUCTOS RELACIONADOS<h2>
             <!-- Carousel de cards -->
-            <section class="cards__container">
+            <section class="carousel__cards">
                 <article class="card new-item">
-                    <picture class="card__picture">
-                        <a href="/">
-                            <img src="/public/img/star-wars/trooper-1.webp" alt="">
-                        </a>
-                    </picture>
-                    <section class="card__content">
-                        <span class="card__collection">star wars</span>
-                        <h4 class="card__name">stormtrooper lightsaber</h4>
-                        <span class="card__price">$ 1799,99</span>
-                        <span class="card__payments">3 cuotas sin interés</span>
-                    </section>
+                    <a class="card__link" href="">
+                        <picture class="card__cover">
+                            <img class="card__img-front" src="/public/img/star-wars/trooper-1.webp" alt="">
+                            <img class="card__img-back" src="/public/img/star-wars/trooper-box.webp" alt="">
+                        </picture>
+                        <section class="card__content">
+                            <span class="card__collection">star wars</span>
+                            <h4 class="card__name">stormtrooper lightsaber</h4>
+                            <span class="card__price">$ 1799,99</span>
+                            <span class="card__payments">3 cuotas sin interés</span>
+                        </section>
+                    </a>
                 </article>
 
                 <article class="card new-item">
-                    <picture class="card__picture">
-                        <a href="/">
-                            <img src="/public/img/pokemon/pidgeotto-1.webp" alt="">
-                        </a>
-                    </picture>
-                    <section class="card__content">
-                        <span class="card__collection">pokemon</span>
-                        <h4 class="card__name">pidgeotto</h4>
-                        <span class="card__price">$ 1799,99</span>
-                        <span class="card__payments">3 cuotas sin interés</span>
-                    </section>
+                    <a class="card__link" href="">
+                        <picture class="card__cover">
+                            <img class="card__img-front" src="/public/img/pokemon/pidgeotto-1.webp" alt="">
+                            <img class="card__img-back" src="/public/img/pokemon/pidgeotto-box.webp" alt="">
+                        </picture>
+                        <section class="card__content">
+                            <span class="card__collection">pokemon</span>
+                            <h4 class="card__name">pidgeotto</h4>
+                            <span class="card__price">$ 1799,99</span>
+                            <span class="card__payments">3 cuotas sin interés</span>
+                        </section>
+                    </a>
                 </article>
 
                 <article class="card new-item">
-                    <picture class="card__picture">
-                        <a href="/">
-                            <img src="/public/img/harry-potter/luna-1.webp" alt="">
-                        </a>
-                    </picture>
-                    <section class="card__content">
-                        <span class="card__collection">harry potter</span>
-                        <h4 class="card__name">luna lovegood</h4>
-                        <span class="card__price">$ 1799,99</span>
-                        <span class="card__payments">3 cuotas sin interés</span>
-                    </section>
+                    <a class="card__link" href="">
+                        <picture class="card__cover">
+                            <img class="card__img-front" src="/public/img/harry-potter/luna-1.webp" alt="">
+                            <img class="card__img-back" src="/public/img/harry-potter/luna-box.webp" alt="">
+                        </picture>
+                        <section class="card__content">
+                            <span class="card__collection">harry potter</span>
+                            <h4 class="card__name">luna lovegood</h4>
+                            <span class="card__price">$ 1799,99</span>
+                            <span class="card__payments">3 cuotas sin interés</span>
+                        </section>
+                    </a>
                 </article>
             </section>
         </section>

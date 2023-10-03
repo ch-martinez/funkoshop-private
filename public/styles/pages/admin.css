@@ -5,6 +5,7 @@
     gap: var(--spacing-36);
 }
 
+/* Search bar */
 .admin-search__container{
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@
     min-width: 530px;
 }
 
-/*  */
+/* List head */
 .list-head__container{
     display: flex;
     justify-content: space-between;
@@ -33,30 +34,33 @@
     letter-spacing: 1.68px;
 }
 
-.list-head__add{
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-20);
-    font-size: var(--font-large);
-    font-weight: 700;
-}
+    /* Add button */
+    .list-head__add{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-20);
+        padding: var(--spacing-8);
+        font-size: var(--font-large);
+        font-weight: 700;
+        border-radius: 10px;
+        transition: var(--transition--01);
+    }
 
-.list-head__add picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    width: 32px;
-    height: 32px;
-    background-color: var(--primary-solid);
-    border-radius: 5px;
+    .list-head__add picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        width: 32px;
+        height: 32px;
+        background-color: var(--primary-solid);
+        border-radius: 5px;
 
-}
+    }
 
 /* list items */
 .list__table{
     border-collapse: separate;
-    width: 100%;
     border-spacing: 0;
 }
 
@@ -75,12 +79,25 @@
     font-weight: 700;
 }
 
-/* Iconos editar y borrar */
-.list__row .list__data:last-child{
-    display: flex;
-    justify-content: end;
-    gap: var(--spacing-42);
-}
+    /* Iconos editar y borrar */
+    .list__row .list__data:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: var(--spacing-42);
+    }
+
+    .list__btn{
+        font-size: 0rem;
+        border-radius: 5px;
+        transition: var(--transition--01);
+    }
+
+/* Hover */
+    .list-head__add:hover,
+    .list__btn:hover{
+        background-color: var(--secondary-300);
+    }
 
 /* Colorear las filas impar */
 .list__row:nth-child(odd){

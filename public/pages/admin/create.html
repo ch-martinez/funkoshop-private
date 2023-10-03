@@ -44,8 +44,71 @@
             </ul>
         </nav>
     </header>
-    <main class="container test">
-        <h1>CONTENIDO</h1>
+    <main class="container container--main">
+        <h1 class="container__title">Crear nuevo item</h1>
+        <form class="create-modify" action="">
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-categoria">Categoria:</label>
+                <select class="input-select" name="admin-categoria" id="">
+                    <option value="stw">STAR WARS</option>
+                    <option value="pkm">POKEMON</option>
+                    <option value="hpt">HARRY POTTER</option>
+                </select>
+            </div>
+
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-licence">Licencia:</label>
+                <select class="input-select" name="admin-categoria" id="">
+                    <option value="l01">Licencia 01</option>
+                    <option value="l02">Licencia 02</option>
+                    <option value="l03">Licencia 03</option>
+                </select>
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-name">Nombre del producto:</label>
+                <input class="input-text" name="admin-name" type="text">
+            </div>
+            <div class="create-modify__item">
+                <textarea class="input-textarea" placeholder="Descripción del producto" name="" id="" cols="30" rows="6"></textarea>
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-sku">SKU:</label>
+                <input class="input-text" name="admin-sku" type="text">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-price">Precio:</label>
+                <input class="input-text" name="admin-price" type="text">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-stock">Stock:</label>
+                <input class="input-text" name="admin-stock" type="text">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-discount">Descuento:</label>
+                <input class="input-text" name="admin-discount" type="text">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-payments">Cuotas:</label>
+                <select class="input-select" name="admin-payments" id="">
+                    <option value="0c">Sin cuotas</option>
+                    <option value="3si">3 - SIN interés</option>
+                    <option value="6si">6 - SIN interés</option>
+                    <option value="12si">12 - SIN interés</option>
+                    <option value="24ci">24 - CON interés</option>
+                </select>
+            </div>
+
+            <div class="create-modify__item">
+                <label class="label label--admin" for="admin-payments">Imágenes:</label>
+                <input name="admin-img" accept="image/png,image/jpeg" type="file">
+            </div>
+
+            <div class="create-modify__item">
+                <button class="btn">Agregar producto</button>
+                <button class="btn" type="reset">Limpiar</button>
+            </div>
+        </form>
+
     </main>
     <footer class="container--menu">
         <section class="navbar navbar--footer container">

@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="/public/img/favicon.ico"/>
-    <link rel="stylesheet" href="/public/styles/index.css">
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <link rel="stylesheet" href="/styles/index.css">
     <title>FS - Admin</title>
 </head>
 <body>
+    <!-- Inicio header -->
     <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/public/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
+            <!-- Menu de navegacion -->
             <ul class="navbar__menu">
                 <li class="navbar__item whit-submenu">
-                    <a class="navbar__link whit-icon" href="/public/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <a class="navbar__link whit-icon" href="/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <!-- Submenu desplegable de productos -->
                     <ul class="submenu">
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/public/pages/shop/funkos.html">FUNKOS</a>
+                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
                         </li>
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/public/pages/shop/remeras.html">REMERAS</a>
+                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
                         </li>
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/public/pages/shop/llaveros.html">LLAVEROS</a>
+                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
                         </li>
                     </ul>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/public/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/public/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item cart-icon">
-                    <a class="navbar__link" href="/public/pages/shop/cart.html">
-                        <img src="/public/img/icons/cart-icon.svg" alt="Carrito de compras">
+                    <a class="navbar__link" href="/pages/shop/cart.html">
+                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
                     </a>
                 </li>
             </ul>
@@ -49,7 +52,7 @@
         <!-- Seccion de busqueda item -->
         <section class="admin-search__container">
             <picture>
-                <img src="/public/img/icons/search_icon.svg" alt="Buscar item">
+                <img src="/img/icons/search_icon.svg" alt="Buscar item">
             </picture>
             <input class="input-text--box admin-search__input" type="text" placeholder="Código, nombre o categoria">
         </section>
@@ -57,10 +60,10 @@
         <section class="list-head__container">
             <h1 class="list-head__title">LISTADO DE PRODUCTOS</h1>
             <div>
-                <a class="list-head__add" href="/public/pages/admin/create.html">
+                <a class="list-head__add" href="/pages/admin/create.html">
                     <span>AGREGAR</span>
                     <picture>
-                        <img src="/public/img/icons/+.svg" alt="Agregar item">
+                        <img src="/img/icons/+.svg" alt="Agregar item">
                     </picture>
                 </a>
             </div>
@@ -83,11 +86,11 @@
                         <td class="list__data">Baby Yoda Blueball</td>
                         <td class="list__data">STAR WARS</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -98,11 +101,11 @@
                         <td class="list__data">Boba Fett Fighter</td>
                         <td class="list__data">STAR WARS</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -113,11 +116,11 @@
                         <td class="list__data">Luke Skylwalker & Grogu</td>
                         <td class="list__data">STAR WARS</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -128,11 +131,11 @@
                         <td class="list__data">Stormtrooper Lightsaber</td>
                         <td class="list__data">STAR WARS</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -143,11 +146,11 @@
                         <td class="list__data">Charmander Smiley</td>
                         <td class="list__data">POKEMON</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -158,11 +161,11 @@
                         <td class="list__data">Dragonite Hi!</td>
                         <td class="list__data">POKEMON</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -173,11 +176,11 @@
                         <td class="list__data">Pidgeotto Flying</td>
                         <td class="list__data">POKEMON</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -188,11 +191,11 @@
                         <td class="list__data">Pikachu Smiley</td>
                         <td class="list__data">POKEMON</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -203,11 +206,11 @@
                         <td class="list__data">Vulpix Fancy</td>
                         <td class="list__data">POKEMON</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -218,11 +221,11 @@
                         <td class="list__data">Harry Potter & Hegwid</td>
                         <td class="list__data">HARRY POTTER</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -233,11 +236,11 @@
                         <td class="list__data">Herminione Ball Dress</td>
                         <td class="list__data">HARRY POTTER</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -248,11 +251,11 @@
                         <td class="list__data">Luna Lovegood Lion Mask</td>
                         <td class="list__data">HARRY POTTER</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -263,11 +266,11 @@
                         <td class="list__data">Snape Patronus</td>
                         <td class="list__data">HARRY POTTER</td>
                         <td class="list__data">
-                            <a class="list__btn" href="/public/pages/admin/modify.html">
-                                <img src="/public/img/icons/edit_pencil.svg" alt="">
+                            <a class="list__btn" href="/pages/admin/modify.html">
+                                <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
                             <a class="list__btn" href="">
-                                <img src="/public/img/icons/delete_trash.svg" alt="">
+                                <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
@@ -280,18 +283,18 @@
         <section class="navbar navbar--footer container">
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/public/pages/shop/shop.html">SHOP</a>
+                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/public/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/public/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
                 </li>
             </ul>
             <picture class="navbar-footer__logo">
                 <a href="/index.html">
-                    <img src="/public/img/branding/isotype.svg" alt="FunkoShop Logo">
+                    <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
                 </a>
             </picture>
         </section>

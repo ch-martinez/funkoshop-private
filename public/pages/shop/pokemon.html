@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
     <link rel="stylesheet" href="/styles/index.css">
-    <title>FS - Llaveros</title>
+    <title>FS - Pokemon</title>
 </head>
 <body>
+    <!-- Inicio header -->
     <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
@@ -15,18 +16,20 @@
                     <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
+            <!-- Menu de navegacion -->
             <ul class="navbar__menu">
                 <li class="navbar__item whit-submenu">
                     <a class="navbar__link whit-icon" href="/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <!-- Submenu desplegable de productos -->
                     <ul class="submenu">
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/funkos.html">FUNKOS</a>
+                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
                         </li>
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/remeras.html">REMERAS</a>
+                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
                         </li>
                         <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/llaveros.html">LLAVEROS</a>
+                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
                         </li>
                     </ul>
                 </li>
@@ -44,11 +47,249 @@
             </ul>
         </nav>
     </header>
-    <main class="container test">
-        <h1>CONTENIDO</h1>
+
+    <main class="container container--main container--shop">
+        <!-- Seccion lateral con filtros de busqueda y orden -->
+        <aside class="filters__container">
+            <form class="filters__form" action="">
+                <!-- Buscar por item o categoria -->
+                <div class="filter">
+                    <label class="label label--filter" for="search">BUSCAR</label>
+                    <input class="input-text--box" id="search" type="text" placeholder="Item o categoria">
+                </div>
+                <!-- Ordenar items -->
+                <div class="filter">
+                    <label class="label label--filter" for="short">ORDENAR POR</label>
+                    <select class="input-select" name="short" id="short">
+                        <option value="precio_mayor">Mayor precio</option>
+                        <option value="precio_menor">Menor precio</option>
+                        <option value="nombre_az">Nombre A-Z</option>
+                        <option value="nombre_za">Nombre Z-A</option>
+                        <option value="destacado">Destacados</option>
+                    </select>
+                </div>
+                <!-- Filtrar items por precio -->
+                <div class="filter">
+                    <label class="label label--filter">PRECIO</label>
+                    <div class="filter--price">
+                        <label class="label--filter-price" for="min_price">MIN<input class="input-number--box input-hide-arrows" type="number" placeholder="0" min="0">-</label>
+                        <label class="label--filter-price" for="max_price">MAX<input class="input-number--box input-hide-arrows" type="number" placeholder="0" min="0"></label>
+                    </div>
+                </div>
+                <!-- Filtrar items segun caracteristicas -->
+                <div class="filter">
+                    <label class="label label--filter">FILTRAR</label>
+                    <ul>
+                        <li class="filter__li">
+                            <input class="input-checkbox" type="checkbox" name="check_new" id="check_new">
+                            <label class="label--checkbox" for="check_new">NUEVOS</label>
+                        </li>
+                        <li class="filter__li">
+                            <input class="input-checkbox" type="checkbox" name="check_offer" id="check_offer">
+                            <label class="label--checkbox" for="check_offer">OFERTAS</label>
+                        </li>
+                        <li class="filter__li">
+                            <input class="input-checkbox" type="checkbox" name="check_special" id="check_special">
+                            <label class="label--checkbox" for="check_special">EDICIÓN ESPECIAL</label>
+                        </li>
+                        <li class="filter__li">
+                            <input class="input-checkbox" type="checkbox" name="check_fav" id="check_fav">
+                            <label class="label--checkbox" for="check_fav">FAVORITOS</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </aside>
+
+        <!-- Listado de items -->
+        <section class="shop__container">
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/charmander-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/charmander-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">charmander</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/dragonite-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/dragonite-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">dragonite</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/pidgeotto-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/pidgeotto-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">pidgeotto</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/pikachu-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/pikachu-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">pikachu</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/vulpix-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/vulpix-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">vulpix</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/charmander-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/charmander-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">charmander</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/dragonite-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/dragonite-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">dragonite</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/pidgeotto-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/pidgeotto-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">pidgeotto</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/pikachu-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/pikachu-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">pikachu</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/vulpix-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/vulpix-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">vulpix</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/charmander-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/charmander-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">charmander</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+            <article class="card new-item">
+                <a class="card__link" href="/pages/shop/item.html">
+                    <picture class="card__cover">
+                        <img class="card__img-front" src="/img/pokemon/dragonite-1.webp" alt="">
+                        <img class="card__img-back" src="/img/pokemon/dragonite-box.webp" alt="">
+                    </picture>
+                    <section class="card__content">
+                        <span class="card__collection">pokemon</span>
+                        <h4 class="card__name">dragonite</h4>
+                        <span class="card__price">$ 1799,99</span>
+                        <span class="card__payments">3 cuotas sin interés</span>
+                    </section>
+                </a>
+            </article>
+
+        </section>
     </main>
+
+    <!-- Inicio footer -->
     <footer class="container--menu">
         <section class="navbar navbar--footer container">
+            <!-- Menu de navegacion footer -->
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
                     <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
@@ -66,7 +307,7 @@
                 </a>
             </picture>
         </section>
-        
+        <!-- Pie de pagina -->
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

@@ -1,64 +1,60 @@
 .container--login{
     align-items: center;
-    gap: var(--spacing-36);
+}
+
+.container--login span{
+    margin-top: var(--spacing-12);
+    font-size: var(--font-xsmall);
+    text-align: center;
 }
 
 .login__form{
+    width: 50rem;
+    margin: var(--spacing-48) 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: stretch;
-    text-align: center;
-    margin: auto;
-    gap: var(--spacing-36);
+    gap: var(--spacing-20);
 }
 
 .form__box{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: var(--spacing-20);
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.form__box--submit{
-    justify-content: center;
-}
-
-.login__label{
+.form__box--footer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-20);
-    font-size: var(--font-medium);
-    font-weight: 600;
-}
-
-.login__input{
-    display: inline-block;
-    font-size: var(--font-medium);
-    border: none;
-    border-bottom: 2px solid var(--primary-solid);
-}
-
-.login__input:focus{
-    outline: none;
+    flex-direction: row;
+    justify-content: center;
+    font-size: var(--font-xsmall);
 }
 
 .form__submit{
-    border-style: none;
+    margin-top: var(--spacing-48);
 }
 
-.filter__sublabel--terms{
-    font-size: var(--font-medium);
-    font-weight: 500;
+/* -------------------- */
+.login-options{
+    margin-top: var(--spacing-8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.filter__sublabel--terms a{
-    color: var(--secondary-solid);
+.login-options__remember{
+    display: flex;
+    align-items: center;
 }
 
-.container--login p{
-    font-size: var(--font-large);
-    font-weight: 500;
-    align-self: center;
-}
+    .input-checkbox--login{
+        width: 16px;
+        height: 16px;
+        margin-right: var(--spacing-8);
+    }
+
+    .label--login-sublabel{
+        display: inline-block;
+        font-size: var(--font-xsmall);
+    }

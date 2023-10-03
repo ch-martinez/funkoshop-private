@@ -52,23 +52,27 @@
         <h2 class="container__title">INGRESAR A MI CUENTA</h2>
         <form action="/public/pages/admin/admin.html" class="login__form">
             <div class="form__box">
-                <label class="label" for="">E-mail:</label>
-                <input class="input-text" type="email" name="email">
+                <label class="label" for="">Correo electronico</label>
+                <input class="input-text--box" type="email" name="email">
             </div>
             <div class="form__box">
-                <label class="label" for="">Contraseña:</label>
-                <input class="input-text" type="password" name="pass">
-            </div>
-            <div class="form__box form__box--submit">
-                <input class="btn form__submit" type="submit" value="Ingresar">
-                <div class="remember__container">
-                    <label class="label--checkbox" for="">
-                    <input class="input-checkbox" type="checkbox">Recordarme</label>
+                <label class="label" for="">Contraseña</label>
+                <input class="input-text--box" type="password" name="pass">
+                <div class="login-options">
+                    <div class="login-options__remember">
+                        <input class="input-checkbox input-checkbox--login" type="checkbox" id="remember">
+                        <label class="label--checkbox" for="remember">Recordarme</label>
+                    </div>
+                    <a href="" class="link__blue link__blue--lost-pass">Olvidé mi contraseña</a>
                 </div>
             </div>
-            <div>
-                <a href="" class="card__payments">Olvidé mi contraseña</a>  | 
-                <a href="/public/pages/admin/register.html" class="card__payments">Registrar</a>
+
+            <input class="btn form__submit" type="submit" value="INGRESAR">
+
+            <div class="form__box form__box--footer">
+                <label class="label label--login-sublabel">¿No tienes cuenta?
+                    <a href="/public/pages/admin/register.html" class="link__blue">crea una ahora</a>
+                </label>
             </div>
         </form>
     </main>

@@ -25,12 +25,13 @@
 /* Input de texto */
 .input-text{
     width: 100%;
+    background-color: inherit;
     color: var(--darl-900);
     font-family: var(--font-base);
     font-size: var(--font-medium);
+    line-height: 10px;
     border-style: none;
     border-bottom: 2px solid var(--bg-dark-solid);
-    line-height: 10px;
     outline: none;
     transition: var(--transition--01);
 }

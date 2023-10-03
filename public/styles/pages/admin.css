@@ -93,13 +93,14 @@
         transition: var(--transition--01);
     }
 
-/* Hover */
-    .list-head__add:hover,
-    .list__btn:hover{
-        background-color: var(--secondary-300);
-    }
-
 /* Colorear las filas impar */
 .list__row:nth-child(odd){
     background-color: var(--row-odd);
 }
+
+/* Hover */
+    .list__row:hover,
+    .list-head__add:hover,
+    .list__btn:hover{
+        background-color: var(--secondary-300);
+    }

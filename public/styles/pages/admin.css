@@ -100,7 +100,11 @@
 
 /* Hover */
     .list__row:hover,
-    .list-head__add:hover,
-    .list__btn:hover{
+    .list-head__add:hover
+    {
         background-color: var(--secondary-300);
+    }
+
+    .list__btn:hover{
+        background-color: var(--bg-light-solid);
     }

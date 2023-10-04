@@ -1,7 +1,7 @@
 .card{
+    margin: 3px;
     position: relative;
     max-width: 360px;
-    padding: var(--spacing-20);
     background-color: var(--bg-light-solid);
     border: 1px solid rgba(0,0,0,.05);
     transition: var(--transition--01);
@@ -9,13 +9,14 @@
 
     .card:hover{
         box-shadow: var(--border-shadow--01);
+        transform: scale(1.01);
     }
 
 .card__link{
+    font-size: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--spacing-28);
 }
 
 /* Contenido debajo de picture */
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-12);
+    padding: var(--spacing-20);
     text-transform: uppercase;
 }
 
@@ -48,7 +50,7 @@
     }
 
 /* Nuevo item */
-.new-item::before{
+.new-item::after{
     content: 'NUEVO';
     position: absolute;
     top: 0;
@@ -73,9 +75,7 @@
     justify-content: space-around;
 }
 
-.card__img-front{
-}
-
+/* Cambia de vista al hacer hover */
 .card__img-back{
     display: none;
 }

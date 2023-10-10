@@ -22,6 +22,23 @@
     -webkit-animation: fadeout var(--animation-out-settings);
 }
 
+/* Modal close button */
+.modal__close{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: var(--spacing-28);
+    right: var(--spacing-20);
+    color: var(--dark-700);
+    cursor: pointer;
+    transition: var(--transition--01);
+}
+
+.modal__close:hover{
+    color: var(--primary-solid);
+}
+
+/* Modal Content */
 .modal__title{
     font-size: var(--font-xlarge);
     margin-bottom: var(--spacing-28);

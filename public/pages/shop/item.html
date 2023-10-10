@@ -68,7 +68,15 @@
                     </div>
                     <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
                 </div>
-                <a class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <dialog id="modal" class="modal">
+                    <div id="modalClose" class="modal__close">
+                        <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
+                    </div>
+                    <picture>
+                        <img src="/img/medios_pagos.jpg" alt="Medios de pago">
+                    </picture>
+                </dialog>
             </section>
         </article>
 
@@ -148,6 +156,7 @@
         <!-- Pie de pagina -->
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="/scripts/modal.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>

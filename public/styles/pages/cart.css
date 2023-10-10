@@ -53,15 +53,12 @@
 }
 
 .table__delet{
-    font-size: 0rem;
-    display: inline-block;
-    width: 28px;
-    border-radius: 100%;
+    color: var(--dark-700);
     transition: var(--transition--01);
 }
 
     .table__delet:hover{
-        background-color: var(--primary-300);
+        color: var(--primary-solid);
     }
 
 /* Resumen */

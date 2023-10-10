@@ -1,11 +1,11 @@
-const terms = document.getElementById('terms');
-const modal = document.getElementById('modal--terms');
-const close_modal = document.querySelector("#close-modal")
+const modal = document.getElementById('modal');
+const modalOpen = document.getElementById('modalOpen');
+const modalClose = document.getElementById('modalClose');
 
-terms.addEventListener('click',() => {
+modalOpen.addEventListener('click',() => {
     modal.showModal();
 });
 
-close-modal.addEventListener('click', () => {
+modalClose.addEventListener('click',() => {
     modal.close();
-})
+});

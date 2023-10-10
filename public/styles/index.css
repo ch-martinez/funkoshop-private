@@ -14,6 +14,7 @@
 @import url('/styles/components/item.css');
 @import url('/styles/components/label-inputs.css');
 @import url('/styles/misc/animations.css');
+@import url('/styles/components/modal.css');
 
 /* Pages */
 @import url('/styles/pages/home.css');

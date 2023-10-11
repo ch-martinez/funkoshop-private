@@ -61,10 +61,10 @@
                 <span class="item__price">$ 1799,99</span>
                 <!-- Contenedor para la cantidad a agregar de items al carrito -->
                 <div class="amount">
-                    <input class="amount__input input-hide-arrows" type="number" value="1" min="1">
+                    <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1">
                     <div class="amount__btn-container">
-                        <a class="amount__btn" href=""><img src="/img/icons/+.svg" alt=""></a>
-                        <a class="amount__btn" href=""><img src="/img/icons/-.svg" alt="" srcset=""></a>
+                        <a id="btn__add" class="amount__btn" href="#"><img src="/img/icons/+.svg" alt=""></a>
+                        <a id="btn__substract" class="amount__btn" href="#"><img src="/img/icons/-.svg" alt="" srcset=""></a>
                     </div>
                     <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
                 </div>
@@ -157,6 +157,7 @@
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="/scripts/modal.js"></script>
+    <script src="/scripts/item-quantity.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>

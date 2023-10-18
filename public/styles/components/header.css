@@ -33,20 +33,20 @@
         background-color: var(--primary-900);
     }
 
-.whit-icon{
+.with-icon{
     display: flex;
     align-items: center;
     gap: var(--spacing-4);
 }
 
-.whit-icon iconify-icon{
-    font-size: var(--font-xlarge);
+.with-icon iconify-icon{
+    font-size: var(--font-large);
     padding-bottom: 3px;
 }
 
 /* Submenu desplegable */
 
-.whit-submenu:hover .submenu{
+.with-submenu:hover .submenu{
     display: inline-block;
 }
 

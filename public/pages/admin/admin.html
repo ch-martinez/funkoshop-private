@@ -8,7 +8,7 @@
     <title>FS - Admin</title>
 </head>
 <body>
-    <!-- Inicio header -->
+    <!------ Inicio header ------>
     <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
@@ -16,33 +16,20 @@
                     <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
-            <!-- Menu de navegacion -->
+
+            <!------ Menu de navegacion ------>
             <ul class="navbar__menu">
-                <li class="navbar__item whit-submenu">
-                    <a class="navbar__link whit-icon" href="/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-                    <!-- Submenu desplegable de productos -->
-                    <ul class="submenu">
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
-                        </li>
-                    </ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
                 </li>
-                <li class="navbar__item cart-icon">
-                    <a class="navbar__link" href="/pages/shop/cart.html">
-                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                    </a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
                 </li>
             </ul>
         </nav>
@@ -57,10 +44,10 @@
             <input class="input-text--box admin-search__input" type="text" placeholder="Código, nombre o categoria">
         </section>
         <!-- Cabecera de tabla para agregar item -->
-        <section class="list-head__container">
-            <h1 class="list-head__title">LISTADO DE PRODUCTOS</h1>
+        <section class="table-admin-head__container">
+            <h1 class="table-admin-head__title">LISTADO DE PRODUCTOS</h1>
             <div>
-                <a class="list-head__add" href="/pages/admin/create.html">
+                <a class="table-admin-head__add" href="/pages/admin/create.html">
                     <span>AGREGAR</span>
                     <picture>
                         <img src="/img/icons/+.svg" alt="Agregar item">
@@ -70,206 +57,206 @@
         </section>
         
         <!-- Listado de items -->
-        <table class="list__table">
+        <table class="table-admin">
             <thead>
                 <tr>
-                    <th class="list__data--head list__data">ID</t>
-                    <th class="list__data--head list__data">Código</th>
-                    <th class="list__data--head list__data">Nombre del producto</th>
-                    <th class="list__data--head list__data" colspan="2">Categoria</th>
+                    <th class="table-admin__data--head table-admin__data">ID</t>
+                    <th class="table-admin__data--head table-admin__data">Código</th>
+                    <th class="table-admin__data--head table-admin__data">Nombre del producto</th>
+                    <th class="table-admin__data--head table-admin__data" colspan="2">Categoria</th>
                 </tr>
                 <tbody>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">1</td>
-                        <td class="list__data">STW001001</td>
-                        <td class="list__data">Baby Yoda Blueball</td>
-                        <td class="list__data">STAR WARS</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">1</td>
+                        <td class="table-admin__data">STW001001</td>
+                        <td class="table-admin__data">Baby Yoda Blueball</td>
+                        <td class="table-admin__data">STAR WARS</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">2</td>
-                        <td class="list__data">STW001002</td>
-                        <td class="list__data">Boba Fett Fighter</td>
-                        <td class="list__data">STAR WARS</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">2</td>
+                        <td class="table-admin__data">STW001002</td>
+                        <td class="table-admin__data">Boba Fett Fighter</td>
+                        <td class="table-admin__data">STAR WARS</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">3</td>
-                        <td class="list__data">STW001003</td>
-                        <td class="list__data">Luke Skylwalker & Grogu</td>
-                        <td class="list__data">STAR WARS</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">3</td>
+                        <td class="table-admin__data">STW001003</td>
+                        <td class="table-admin__data">Luke Skylwalker & Grogu</td>
+                        <td class="table-admin__data">STAR WARS</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">4</td>
-                        <td class="list__data">STW001004</td>
-                        <td class="list__data">Stormtrooper Lightsaber</td>
-                        <td class="list__data">STAR WARS</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">4</td>
+                        <td class="table-admin__data">STW001004</td>
+                        <td class="table-admin__data">Stormtrooper Lightsaber</td>
+                        <td class="table-admin__data">STAR WARS</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">5</td>
-                        <td class="list__data">PKM001001</td>
-                        <td class="list__data">Charmander Smiley</td>
-                        <td class="list__data">POKEMON</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">5</td>
+                        <td class="table-admin__data">PKM001001</td>
+                        <td class="table-admin__data">Charmander Smiley</td>
+                        <td class="table-admin__data">POKEMON</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">6</td>
-                        <td class="list__data">PKM001002</td>
-                        <td class="list__data">Dragonite Hi!</td>
-                        <td class="list__data">POKEMON</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">6</td>
+                        <td class="table-admin__data">PKM001002</td>
+                        <td class="table-admin__data">Dragonite Hi!</td>
+                        <td class="table-admin__data">POKEMON</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                                         <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">7</td>
-                        <td class="list__data">PKM001003</td>
-                        <td class="list__data">Pidgeotto Flying</td>
-                        <td class="list__data">POKEMON</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">7</td>
+                        <td class="table-admin__data">PKM001003</td>
+                        <td class="table-admin__data">Pidgeotto Flying</td>
+                        <td class="table-admin__data">POKEMON</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">8</td>
-                        <td class="list__data">PKM001004</td>
-                        <td class="list__data">Pikachu Smiley</td>
-                        <td class="list__data">POKEMON</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">8</td>
+                        <td class="table-admin__data">PKM001004</td>
+                        <td class="table-admin__data">Pikachu Smiley</td>
+                        <td class="table-admin__data">POKEMON</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">9</td>
-                        <td class="list__data">PKM001005</td>
-                        <td class="list__data">Vulpix Fancy</td>
-                        <td class="list__data">POKEMON</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">9</td>
+                        <td class="table-admin__data">PKM001005</td>
+                        <td class="table-admin__data">Vulpix Fancy</td>
+                        <td class="table-admin__data">POKEMON</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">10</td>
-                        <td class="list__data">HPT001001</td>
-                        <td class="list__data">Harry Potter & Hegwid</td>
-                        <td class="list__data">HARRY POTTER</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">10</td>
+                        <td class="table-admin__data">HPT001001</td>
+                        <td class="table-admin__data">Harry Potter & Hegwid</td>
+                        <td class="table-admin__data">HARRY POTTER</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">11</td>
-                        <td class="list__data">HPT001002</td>
-                        <td class="list__data">Herminione Ball Dress</td>
-                        <td class="list__data">HARRY POTTER</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">11</td>
+                        <td class="table-admin__data">HPT001002</td>
+                        <td class="table-admin__data">Herminione Ball Dress</td>
+                        <td class="table-admin__data">HARRY POTTER</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">12</td>
-                        <td class="list__data">HPT001003</td>
-                        <td class="list__data">Luna Lovegood Lion Mask</td>
-                        <td class="list__data">HARRY POTTER</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">12</td>
+                        <td class="table-admin__data">HPT001003</td>
+                        <td class="table-admin__data">Luna Lovegood Lion Mask</td>
+                        <td class="table-admin__data">HARRY POTTER</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
                     </tr>
                     <!-- Fila de tabla -->
-                    <tr class="list__row">
-                        <td class="list__data">13</td>
-                        <td class="list__data">HPT001004</td>
-                        <td class="list__data">Snape Patronus</td>
-                        <td class="list__data">HARRY POTTER</td>
-                        <td class="list__data">
-                            <a class="list__btn" href="/pages/admin/modify.html">
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data">13</td>
+                        <td class="table-admin__data">HPT001004</td>
+                        <td class="table-admin__data">Snape Patronus</td>
+                        <td class="table-admin__data">HARRY POTTER</td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/pages/admin/modify.html">
                                 <img src="/img/icons/edit_pencil.svg" alt="">
                             </a>
-                            <a class="list__btn" href="">
+                            <a class="table-admin__btn" href="">
                                 <img src="/img/icons/delete_trash.svg" alt="">
                             </a>
                         </td>
@@ -279,17 +266,24 @@
             </thead>
         </table>
     </main>
+
+    <!------ Inicio footer ------>
     <footer class="container--menu">
         <section class="navbar navbar--footer container">
+
+            <!------ Menu de navegacion footer ------>
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/admin/register.html">REGISTRAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
                 </li>
             </ul>
             <picture class="navbar-footer__logo">
@@ -299,8 +293,13 @@
             </picture>
         </section>
         
+        <!------ Pie de pagina ------>
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!------ Scripts EXTERNOS ------>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
+    <!------ Scripts PROPIOS ------>
+    <script src="/scripts/modal.js"></script>
 </body>
 </html>

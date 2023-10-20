@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <!-- Estilos propios -->
     <link rel="stylesheet" href="/styles/index.css">
-    <title>FunkoShop</title>
+    <title>Item - FS</title>
 </head>
 <body>
     <!------ Inicio header ------>
@@ -55,59 +55,48 @@
         </nav>
     </header>
 
-    <!------ Seccion HERO (Banner) ------>
-    <section class="hero">
-        <article class="hero__content container">
-            <h2 class="hero__title">Nuevos Ingresos</h2>
-            <p class="hero__description">Descubrí el próximo Funko Pop de tu colección</p>
-            <a class="btn-link-rounded btn-link-rounded--hero" href="/pages/shop/shop.html">shop</a>
-        </article>
-    </section>
-
     <main class="container container--main">
+        <article class="item">
+            <!-- Imagen del Funko -->
+            <picture class="item__cover">
+                <img class="item__cover-front" src="/img/star-wars/baby-yoda-1.webp" alt="">
+                <img class="item__cover-back" src="/img/star-wars/baby-yoda-box.webp" alt="">
+            </picture>
 
-        <!------ Seccion de colecciones destacadas ------>
-        <section class="collections__container">
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">star wars & the mandalorian</h3>
-                    <p class="collection__description">Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/starwars.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/star-wars/baby-yoda-1.webp" alt="">
-                </picture>
-            </article>
+            <!-- Descripcion del Funko -->
+            <section class="item__content">
+                <span class="item__collection">star wars</span>
+                <span class="item__title">baby yoda blueball</span>
+                <span class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</span>
+                <span class="item__price">$ 1799,99</span>
 
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">pokemon indigo</h3>
-                    <p class="collection__description">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/pokemon.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/pokemon/vulpix-1.webp" alt="">
-                </picture>
-            </article>
+                <!-- Contenedor para la cantidad a agregar de items al carrito -->
+                <div class="amount">
+                    <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1">
+                    <!-- Botones para incrementar y decrementar cantidad de items -->
+                    <div class="amount__btn-container">
+                        <a id="btn__add" class="amount__btn" href="#"><img src="/img/icons/+.svg" alt=""></a>
+                        <a id="btn__substract" class="amount__btn" href="#"><img src="/img/icons/-.svg" alt="" srcset=""></a>
+                    </div>
+                    <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
+                </div>
 
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">harry potter</h3>
-                    <p class="collection__description">Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/harrypotter.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/harry-potter/snape-patronus-1.webp" alt="">
-                </picture>
-            </article>
-        </section>
+                <!-- Ver los metodos de pago -->
+                <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <dialog id="modal" class="modal">
+                    <div id="modalClose" class="modal__close">
+                        <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
+                    </div>
+                    <picture>
+                        <img src="/img/medios_pagos.jpg" alt="Medios de pago">
+                    </picture>
+                </dialog>
+            </section>
+        </article>
 
-        <!------ Seccion de ultimos lanzamientos ------>
+        <!-- Seccion de relacionados -->
         <section class="glide glide--carousel">
-            <h2 class="glid__title">ÚLTIMOS LANZAMIENTOS<h2>
+            <h2 class="glid__title">PRODUCTOS RELACIONADOS<h2>
             <!-- Slide de cards -->
             <section class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -363,5 +352,7 @@
     <!------ Scripts PROPIOS ------>
     <script src="/scripts/glide-config.js"></script> <!-- Configuracion de libreria Glide -->
     <script src="/scripts/cart-counter.js"></script>
+    <script src="/scripts/modal.js"></script>
+    <script src="/scripts/item-quantity.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <title>FS - Registrar</title>
 </head>
 <body>
-    <!-- Inicio header -->
+    <!------ Inicio header ------>
     <header class="container--menu">
         <nav class="navbar container">
             <picture class="navbar__logo">
@@ -16,33 +16,20 @@
                     <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
                 </a>
             </picture>
-            <!-- Menu de navegacion -->
+
+            <!------ Menu de navegacion ------>
             <ul class="navbar__menu">
-                <li class="navbar__item whit-submenu">
-                    <a class="navbar__link whit-icon" href="/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-                    <!-- Submenu desplegable de productos -->
-                    <ul class="submenu">
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
-                        </li>
-                    </ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
                 </li>
-                <li class="navbar__item cart-icon">
-                    <a class="navbar__link" href="/pages/shop/cart.html">
-                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                    </a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
                 </li>
             </ul>
         </nav>
@@ -89,19 +76,24 @@
             </div>
         </form>
     </main>
-    <!-- Inicio footer -->
+
+    <!------ Inicio footer ------>
     <footer class="container--menu">
         <section class="navbar navbar--footer container">
-            <!-- Menu de navegacion footer -->
+
+            <!------ Menu de navegacion footer ------>
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/admin/register.html">REGISTRAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
                 </li>
             </ul>
             <picture class="navbar-footer__logo">
@@ -110,11 +102,14 @@
                 </a>
             </picture>
         </section>
-        <!-- Pie de pagina -->
+        
+        <!------ Pie de pagina ------>
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 
+    <!------ Scripts EXTERNOS ------>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
+    <!------ Scripts PROPIOS ------>
     <script src="/scripts/modal.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>

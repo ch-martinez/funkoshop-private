@@ -79,14 +79,12 @@
     animation: fade 0.7s;
 }
 
-
 /* Seccion carousel*/
 .glid__title{
     font-size: var(--font-display);
     font-weight: 700;
     margin: var(--spacing-68) 0;
 }
-
 
 /* GLID fix arrow */
 .glide__arrow{

@@ -5,14 +5,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.",
         "sku": "STW001001",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 3,
         "discount": 25,
         "payments": 6,
         "new": true,
         "cover":{
             "front": "/img/star-wars/baby-yoda-1.webp",
-            "back": "/img/star-wars/baby-yoda-box.webp",
+            "back": "/img/star-wars/baby-yoda-box.webp"
         }
     },
     {
@@ -21,14 +21,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Boba Fett Fighter - The Mandalorian Saga, edición limitada.",
         "sku": "STW001002",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 3,
         "discount": 25,
         "payments": 6,
         "new": true,
         "cover":{
             "front": "/img/star-wars/bobbafeth-1.webp",
-            "back": "/img/star-wars/bobbafeth-box.webp",
+            "back": "/img/star-wars/bobbafeth-box.webp"
         }
     },
     {
@@ -37,14 +37,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Luke Skylwalker & Grogu - The Mandalorian Saga, edición limitada.",
         "sku": "STW001003",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 3,
         "discount": 25,
         "payments": 6,
         "new": true,
         "cover":{
             "front": "/img/star-wars/luke-1.webp",
-            "back": "/img/star-wars/luke-box.webp",
+            "back": "/img/star-wars/luke-box.webp"
         }
     },
     {
@@ -53,14 +53,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Stormtrooper Lightsaber - The Mandalorian Saga, edición limitada.",
         "sku": "STW001004",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 3,
         "discount": 25,
         "payments": 6,
         "new": true,
         "cover":{
             "front": "/img/star-wars/trooper-1.webp",
-            "back": "/img/star-wars/trooper-box.webp",
+            "back": "/img/star-wars/trooper-box.webp"
         }
     },
     {
@@ -69,14 +69,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Charmander Smiley - Pokemon Saga, edición limitada.",
         "sku": "PKM001001",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 2,
         "discount": 40,
         "payments": 3,
         "new": true,
         "cover":{
             "front": "/img/pokemon/charmander-1.webp",
-            "back": "/img/pokemon/charmander-box.webp",
+            "back": "/img/pokemon/charmander-box.webp"
         }
     },
     {
@@ -85,14 +85,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Dragonite Hi! - Pokemon Saga, edición limitada.",
         "sku": "PKM001002",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 2,
         "discount": 40,
         "payments": 3,
         "new": true,
         "cover":{
             "front": "/img/pokemon/dragonite-1.webp",
-            "back": "/img/pokemon/dragonite-box.webp",
+            "back": "/img/pokemon/dragonite-box.webp"
         }
     },
     {
@@ -101,14 +101,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Pidgeotto Flying - Pokemon Saga, edición limitada.",
         "sku": "PKM001003",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 2,
         "discount": 40,
         "payments": 3,
         "new": true,
         "cover":{
             "front": "/img/pokemon/pidgeotto-1.webp",
-            "back": "/img/pokemon/pidgeotto-box.webp",
+            "back": "/img/pokemon/pidgeotto-box.webp"
         }
     },
     {
@@ -117,14 +117,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Pikachu Smiley - Pokemon Saga, edición limitada.",
         "sku": "PKM001004",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 2,
         "discount": 40,
         "payments": 3,
         "new": true,
         "cover":{
             "front": "/img/pokemon/pikachu-1.webp",
-            "back": "/img/pokemon/pikachu-box.webp",
+            "back": "/img/pokemon/pikachu-box.webp"
         }
     },
     {
@@ -133,14 +133,14 @@
         "licence": "lic01",
         "description": "Figura coleccionable de Vulpix Fancy - Pokemon Saga, edición limitada.",
         "sku": "PKM001005",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 2,
         "discount": 40,
         "payments": 3,
         "new": true,
         "cover":{
             "front": "/img/pokemon/vulpix-1.webp",
-            "back": "/img/pokemon/vulpix-box.webp",
+            "back": "/img/pokemon/vulpix-box.webp"
         }
     },
     {
@@ -149,14 +149,14 @@
         "licence": "lic03",
         "description": "Figura coleccionable de Harry Potter & Hegwid - Harry Potter Saga, edición limitada.",
         "sku": "HPT001001",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 5,
         "discount": 10,
         "payments": 12,
         "new": true,
         "cover":{
             "front": "/img/harry-potter/harry-1.webp",
-            "back": "/img/harry-potter/harry-box.webp",
+            "back": "/img/harry-potter/harry-box.webp"
         }
     },
     {
@@ -165,14 +165,14 @@
         "licence": "lic03",
         "description": "Figura coleccionable de Herminione Ball Dress - Harry Potter Saga, edición limitada.",
         "sku": "HPT001002",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 5,
         "discount": 10,
         "payments": 12,
         "new": true,
         "cover":{
             "front": "/img/harry-potter/hermione-1.webp",
-            "back": "/img/harry-potter/hermione-box.webp",
+            "back": "/img/harry-potter/hermione-box.webp"
         }
     },
     {
@@ -181,14 +181,14 @@
         "licence": "lic03",
         "description": "Figura coleccionable de Luna Lovegood Lion Mask - Harry Potter Saga, edición limitada.",
         "sku": "HPT001003",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 5,
         "discount": 10,
         "payments": 12,
         "new": true,
         "cover":{
             "front": "/img/harry-potter/luna-1.webp",
-            "back": "/img/harry-potter/luna-box.webp",
+            "back": "/img/harry-potter/luna-box.webp"
         }
     },
     {
@@ -197,14 +197,14 @@
         "licence": "lic03",
         "description": "Figura coleccionable de Snape Patronus - Harry Potter Saga, edición limitada.",
         "sku": "HPT001004",
-        "price": 1799.99,
+        "price": 1799,
         "stock": 5,
         "discount": 10,
         "payments": 12,
         "new": true,
         "cover":{
             "front": "/img/harry-potter/snape-patronus-1.webp",
-            "back": "/img/harry-potter/snape-patronus-box.webp",
+            "back": "/img/harry-potter/snape-patronus-box.webp"
         }
-    },
+    }
 ]

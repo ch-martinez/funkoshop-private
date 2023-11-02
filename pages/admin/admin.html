@@ -36,13 +36,15 @@
     </header>
 
     <main class="container container--admin">
+
         <!-- Seccion de busqueda item -->
         <section class="admin-search__container">
-            <picture>
-                <img src="/img/icons/search_icon.svg" alt="Buscar item">
-            </picture>
-            <input class="input-text--box admin-search__input" type="text" placeholder="Código, nombre o categoria">
+            <label for="search">
+                <picture><img src="/img/icons/search_icon.svg" alt="Buscar item"></picture>
+            </label>
+            <input class="input-text--box admin-search__input" id="search" type="search" placeholder="Código, nombre o categoria">
         </section>
+
         <!-- Cabecera de tabla para agregar item -->
         <section class="table-admin-head__container">
             <h1 class="table-admin-head__title">LISTADO DE PRODUCTOS</h1>
@@ -55,7 +57,7 @@
                 </a>
             </div>
         </section>
-        
+
         <!-- Listado de items -->
         <table class="table-admin">
             <thead>

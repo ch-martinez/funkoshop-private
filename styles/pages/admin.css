@@ -102,7 +102,7 @@
     .table-admin__row:hover,
     .table-admin-head__add:hover
     {
-        background-color: var(--secondary-300);
+        background-color: var(--primary-300);
     }
 
     .table-admin__btn:hover{

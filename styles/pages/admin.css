@@ -108,3 +108,34 @@
     .table-admin__btn:hover{
         background-color: var(--bg-light-solid);
     }
+
+/* Modal de eliminacion de item pagina admin */
+.modal--delet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-20);
+    gap: var(--spacing-36);
+}
+
+.modal__title--delet{
+    font-size: var(--font-medium);
+}
+
+    .modal__title--delet span{
+        font-weight: 600;
+    }
+
+.modal__buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-20);
+}
+
+.btn--admin-confirm{
+    background-color: var(--dark-300);
+}
+
+.btn--admin-delet{
+    background-color: var(--secondary-900);
+}

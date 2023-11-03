@@ -36,7 +36,6 @@
     </header>
 
     <main class="container container--admin">
-
         <!-- Seccion de busqueda item -->
         <section class="admin-search__container">
             <label for="search">
@@ -114,12 +113,23 @@
                 <a class="table-admin__btn" href="/pages/admin/modify.html">
                     <img src="/img/icons/edit_pencil.svg" alt="">
                 </a>
-                <a class="table-admin__btn" href="">
+                <a id="modalOpen"  class="table-admin__btn" href="#">
                     <img src="/img/icons/delete_trash.svg" alt="">
                 </a>
             </td>
         </tr>
+        
     </template>
+
+    <!-- 
+    <dialog id="modal" class="modal modal--delet">
+        <p class="modal__title--delet">¿Eliminar el item <span>FUNKO</span>?</p>
+        <div class="modal__buttons-container">
+            <button class="btn btn--admin-confirm">Confirmar</button>
+            <a id="modalClose" class="btn btn--admin-delet">Cancelar</a>
+        </div>
+    </dialog>
+    -->
 
     <!------ Scripts EXTERNOS ------>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->

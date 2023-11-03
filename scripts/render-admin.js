@@ -11,14 +11,13 @@ const fetchData = async () => {
     const data = await res.json()
 
     renderAdmin(data)
-    renderAdmin(data)
-    renderAdmin(data)
 }
 
 let i = 0
 const renderAdmin = (data) => {
     data.forEach(element => {
         i++
+        template_admin.querySelector('.table-admin__row').dataset.id = element.sku
         template_admin.querySelector('.table-admin__data:first-child').textContent = i
         template_admin.querySelector('.table-admin__data:nth-child(2)').textContent = element.sku
         template_admin.querySelector('.table-admin__data:nth-child(3)').textContent = element.name

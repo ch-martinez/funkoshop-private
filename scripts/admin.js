@@ -8,7 +8,7 @@ table.addEventListener('click', (e) => {
 })
 
 alertCancel.addEventListener('click',() => {
-    alert.close();
+    alert.close()
 });
 
 const eliminar = (e) => {
@@ -17,3 +17,5 @@ const eliminar = (e) => {
     alert.querySelector('.alert-delet__text span').textContent = name
     alert.showModal();
 }
+
+

@@ -1,8 +1,14 @@
 .contact__container{
     display: flex;
+    gap: var(--spacing-36);
+    align-items: center;
     justify-content: space-evenly;
-    
+    width: 80%;
     margin: var(--spacing-68) auto;
+    padding: var(--spacing-36);
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 /* Formulario */
@@ -11,51 +17,64 @@
     flex-grow: 1;
     flex-direction: column;
     gap: var(--spacing-12);
-    max-width: 500px;
-}
-
-
-/* Seccion datos de contacto */
-.contact__info-container{
-    max-width: 450px;
-    padding: var(--spacing-20);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #FFF;
-    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
-    border-radius: 10px;
+    max-width: 600px;
 }
 
 .contact__title{
-    display: inline-block;
-    width: 100%;
     font-size: var(--font-xlarge);
     font-weight: 700;
-    text-align: center;
-    background-color: var(--gray--300);
-    border-radius: 10px;
-    padding: var(--spacing-12);
 }
 
-.contact__li{
-    margin-top: var(--spacing-36);
+.label--contact{
+    font-family: var(--font-base);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+/* Seccion datos de contacto */
+.contact__info-container{
+    min-width: 250px;
+}
+
+.contact__ul{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact__link{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: var(--font-medium-20);
+    padding: var(--spacing-20);
+    font-size: var(--font-medium);
+    border-radius: 10px;
     transition: var(--transition--01);
 }
+        .contact__link:hover{
+            background-color: var(--bg-light-soft);
+            box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
+        }
 
     .contact__link iconify-icon{
-        margin-right: var(--spacing-12);
-        font-size: var(--font-display);
-        color: var(--dark-900);
+        font-size: 4rem;
+        color: var(--primary-850);
         transition: var(--transition--01);
     }
 
-    .contact__link:hover, .contact__link:hover iconify-icon{
-        color: var(--primary-900);
+    .contact__link h4{
+        padding: 0;
+        margin: 0;
+        font-size: var(--font-medium-20);
+        color: var(--dark-830)
     }
+
+    .contact__link span{
+        color: var(--dark-500);
+    }
+
+/* Separador vertical entre el formulario y datos de contacto */
+.separator{
+    border: 1px solid var(--dark-500);
+    height: 90%;
+}

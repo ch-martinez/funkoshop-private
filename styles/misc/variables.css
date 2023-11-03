@@ -2,6 +2,7 @@
     /* Palette */
     --primary-solid: #FF3333;
     --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-850: rgba(255, 51, 51, 0.85);
     --primary-500: rgba(255, 51, 51, 0.5);
     --primary-300: rgba(255, 51, 51, 0.3);
 
@@ -17,6 +18,7 @@
 
     --dark-solid: #1F1F1F;
     --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-830: rgba(31, 31, 31, 0.83);
     --dark-700: rgba(31, 31, 31, 0.7);
     --dark-500: rgba(31, 31, 31, 0.5);
     --dark-300: rgba(31, 31, 31, 0.3);

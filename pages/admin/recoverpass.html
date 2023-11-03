@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
     <link rel="stylesheet" href="/styles/index.css">
-    <title>FS - Login</title>
+    <title>Recordar contraseña - FS</title>
 </head>
 <body>
     <!------ Inicio header ------>
@@ -13,7 +13,7 @@
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
                 </a>
             </picture>
 
@@ -52,36 +52,15 @@
     </header>
 
     <main class="container container--main container--login">
-        <h2 class="container__title">INGRESAR A MI CUENTA</h2>
-        <form action="/pages/admin/admin.html" class="login__form">
-            <!-- CORREO ELECTRONICO -->
+        <h2 class="container__title">RECUPERAR CONTRASEÑA</h2>
+        <span>Ingrese su correo con el que se ha registrado, se enviara un link para recuperar su contraseña</span>
+        <form action="" class="login__form">
             <div class="form__box">
-                <label class="label" for="">Correo electronico</label>
-                <input class="input-text--box" type="email" name="email" required>
-            </div>
-            <!-- CONTRASEÑA -->
-            <div class="form__box">
-                <label class="label" for="">Contraseña</label>
-                <input class="input-text--box" type="password" name="pass" required>
-                
-                <!-- OPCIONES DE LOGEO -->
-                <div class="login-options">
-                    <div class="login-options__remember">
-                        <input class="input-checkbox input-checkbox--login" type="checkbox" id="remember">
-                        <label class="label--checkbox" for="remember">Recordarme</label>
-                    </div>
-                    <a href="/pages/admin/recoverpass.html" class="link__blue link__blue--lost-pass">Olvidé mi contraseña</a>
-                </div>
+                <label class="label" for="email">Correo electronico</label>
+                <input class="input-text--box" type="email" id="email" name="email" required>
             </div>
 
-            <input class="btn form__submit" type="submit" value="INGRESAR">
-
-            <!-- REGISTRAR UNA NUEVA CUENTA -->
-            <div class="form__box form__box--footer">
-                <label class="label label--login-sublabel">¿No tienes cuenta?
-                    <a href="/pages/admin/register.html" class="link__blue">crea una ahora</a>
-                </label>
-            </div>
+            <input class="btn form__submit" type="submit" value="Recuperar">
         </form>
     </main>
 

@@ -1,13 +1,14 @@
 const template_admin = document.querySelector('#template_admin').content
 const fragment = document.createDocumentFragment()
 const table = document.querySelector('#tbody')
+const db = 'https://api.npoint.io/d92037831b024e8cc39d'
 
 document.addEventListener('DOMContentLoaded', (e) =>{
     fetchData()
 })
 
 const fetchData = async () => {
-    const res = await fetch('https://api.npoint.io/d92037831b024e8cc39d')
+    const res = await fetch(db)
     const data = await res.json()
 
     renderAdmin(data)

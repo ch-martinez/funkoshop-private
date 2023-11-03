@@ -1,24 +1,35 @@
-.create-modify{
+.create-modify__form{
     width: 80%;
     margin-top: var(--spacing-48);
-    display: grid;
-    grid-template-areas:
-        "categoria categoria liciencia liciencia"
-        "nombre nombre nombre nombre"
-        "descripcion descripcion descripcion descripcion" 
-        "sku sku precio stock"
-        "descuento cuotas . ."
-        "upload upload upload ."
-        "imagen imagen imagen ."
-        "botones botones . .";
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+}
+
+/* Contenedor de los conjuntos de items */
+.create-modify__container{
+    display: flex;
     gap: var(--spacing-48);
 }
 
+/* Contenedor item, input y label */
 .create-modify__item{
-    grid-column: 1/3;
     display: flex;
     gap: var(--spacing-16);
     align-items: center;
+}
+
+/* Fix para que textarea ocupe todo el ancho */
+.create-modify__container:nth-child(3) .create-modify__item{
+    width: 100%;
+}
+
+
+/* Contenedor de carga de imagenes */
+.create-modify__picture-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
 }
 
 .create-modify__picture{
@@ -30,52 +41,4 @@
 
 .create-modify__picture img{
     border-bottom: 3px solid var(--primary-solid);
-}
-
-/* Items grid */
-.create-modify__item:nth-child(1){
-    grid-area: categoria;
-}
-
-.create-modify__item:nth-child(2){
-    grid-area: liciencia;
-}
-
-.create-modify__item:nth-child(3){
-    grid-area: nombre;
-}
-
-.create-modify__item:nth-child(4){
-    grid-area: descripcion;
-}
-
-.create-modify__item:nth-child(5){
-    grid-area: sku;
-}
-.create-modify__item:nth-child(6){
-    grid-area: precio;
-}
-
-.create-modify__item:nth-child(7){
-    grid-area: stock;
-}
-
-.create-modify__item:nth-child(8){
-    grid-area: descuento;
-}
-
-.create-modify__item:nth-child(9){
-    grid-area: cuotas;
-}
-
-.create-modify__item:nth-child(10){
-    grid-area: upload;
-}
-
-.create-modify__item:nth-child(11){
-    grid-area: imagen;
-}
-
-.create-modify__item:last-child{
-    grid-area: botones;
 }

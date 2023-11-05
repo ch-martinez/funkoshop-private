@@ -59,6 +59,7 @@
     --spacing-4: 0.4rem;
 
     /* Transitions */
+    --transition--01: border 0.2s ease-in-out, background 0.2s ease-in-out;
     --transition--01: all 0.2s ease-in-out;
     --transition--02: all 0.3s;
 

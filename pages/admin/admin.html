@@ -69,6 +69,14 @@
                 <tbody id="tbody">
 
                 </tbody>
+
+                <dialog class="alert-delet">
+                    <p class="alert-delet__text">¿Eliminar el item <span></span>?</p>
+                    <div class="alert-delet__buttons-container">
+                        <button class="btn btn--admin-confirm">Confirmar</button>
+                        <button id="alertCancel" class="btn btn--admin-delet">Cancelar</button>
+                    </div>
+                </dialog>
             </thead>
         </table>
     </main>
@@ -113,28 +121,22 @@
                 <a class="table-admin__btn" href="/pages/admin/modify.html">
                     <img src="/img/icons/edit_pencil.svg" alt="">
                 </a>
-                <a id="modalOpen"  class="table-admin__btn" href="#">
-                    <img src="/img/icons/delete_trash.svg" alt="">
+                <a class="table-admin__btn" href="#">
+                    <img class="alert-delet__btn" src="/img/icons/delete_trash.svg" alt="Eliminar item">
                 </a>
             </td>
         </tr>
         
     </template>
 
-    <!-- 
-    <dialog id="modal" class="modal modal--delet">
-        <p class="modal__title--delet">¿Eliminar el item <span>FUNKO</span>?</p>
-        <div class="modal__buttons-container">
-            <button class="btn btn--admin-confirm">Confirmar</button>
-            <a id="modalClose" class="btn btn--admin-delet">Cancelar</a>
-        </div>
-    </dialog>
-    -->
+    
+    
 
     <!------ Scripts EXTERNOS ------>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
     <!------ Scripts PROPIOS ------>
-    <script src="/scripts/modal.js"></script>
+    <!-- <script src="/scripts/modal.js"></script> -->
     <script src="/scripts/render-admin.js"></script>
+    <script src="/scripts/admin.js"></script>
 </body>
 </html>

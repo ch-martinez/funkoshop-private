@@ -57,7 +57,7 @@
         "stock": 3,
         "discount": 25,
         "payments": 6,
-        "new": true,
+        "new": false,
         "cover":{
             "front": "/img/star-wars/trooper-1.webp",
             "back": "/img/star-wars/trooper-box.webp"
@@ -121,7 +121,7 @@
         "stock": 2,
         "discount": 40,
         "payments": 3,
-        "new": true,
+        "new": false,
         "cover":{
             "front": "/img/pokemon/pikachu-1.webp",
             "back": "/img/pokemon/pikachu-box.webp"
@@ -137,7 +137,7 @@
         "stock": 2,
         "discount": 40,
         "payments": 3,
-        "new": true,
+        "new": false,
         "cover":{
             "front": "/img/pokemon/vulpix-1.webp",
             "back": "/img/pokemon/vulpix-box.webp"
@@ -185,7 +185,7 @@
         "stock": 5,
         "discount": 10,
         "payments": 12,
-        "new": true,
+        "new": false,
         "cover":{
             "front": "/img/harry-potter/luna-1.webp",
             "back": "/img/harry-potter/luna-box.webp"
@@ -201,7 +201,7 @@
         "stock": 5,
         "discount": 10,
         "payments": 12,
-        "new": true,
+        "new": false,
         "cover":{
             "front": "/img/harry-potter/snape-patronus-1.webp",
             "back": "/img/harry-potter/snape-patronus-box.webp"

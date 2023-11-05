@@ -159,8 +159,7 @@
     .input-select:hover,
     .input-textarea:hover
     {
-        background-color: var(--row-odd);
-        background-color: var(--bg-light-soft);
+        background-color: var(--bg-light-solid);
         border: 2px solid var(--primary-solid);
     }
 

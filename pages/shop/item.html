@@ -13,21 +13,34 @@
 </head>
 <body>
     <!------ Inicio header ------>
-    <header class="container--menu">
-        <nav class="navbar container">
+    <header class="header">
+        <nav class="navbar">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
+                    <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
+                    <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
                 </a>
             </picture>
+            <!-- Contenedor de items en responsive -->
+            <div class="navbar-mobile">
+                <a class="navbar-mobile__cart" href="/pages/shop/cart.html">
+                    <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
+                    <div class="navbar__cart-count"></div>
+                </a>
+                <button class="navbar-mobile__menu-btn" href="#">
+                    <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
+                </button>
+            </div>
 
             <!------ Menu de navegacion ------>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="/pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-
+                    <a class="navbar__link with-icon" href="#">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
                     <!------ Submenu desplegable de productos ------>
                     <ul class="submenu">
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/pages/shop/shop.html">FUNKOS</a>
+                        </li>
                         <li class="submenu__item navbar__item">
                             <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
                         </li>
@@ -45,10 +58,10 @@
                 <li class="navbar__item">
                     <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
                 </li>
-                <li class="navbar__item cart-icon">
+                <li class="navbar__item navbar__cart">
                     <a class="navbar__link" href="/pages/shop/cart.html">
                         <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                        <div class="cart-icon__counter hidde"></div>
+                        <div class="navbar__cart-count"></div>
                     </a>
                 </li>
             </ul>

@@ -26,6 +26,7 @@
     --bg-light-solid: #FFF;
     --bg-light-soft: #FAFAFF;
     --bg-dark-solid: #30343F;
+    --bg-dark-soft: #3f4452;
     --font-light-solid: #FFFFFF;
 
     /* Typography */
@@ -62,6 +63,7 @@
     --transition--01: border 0.2s ease-in-out, background 0.2s ease-in-out;
     --transition--01: all 0.2s ease-in-out;
     --transition--02: all 0.3s;
+    --transition--navbar: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     /* Animations */
     --animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;

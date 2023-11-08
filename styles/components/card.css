@@ -79,7 +79,7 @@
     animation: fade 0.7s;
 }
 
-/* Seccion carousel*/
+/* Seccion carousel - Libreria GlidJS*/
 .glid__title{
     font-size: var(--font-display);
     font-weight: 700;
@@ -103,4 +103,28 @@
 .glide__arrow--right{
     /* right: 17px; */
     right: -15px;
+}
+
+
+@media (max-width: 767.98px){
+    .card{
+        margin: 0;
+        max-width: 100%;        
+    }
+    
+
+    /* Seccion carousel - Libreria GlidJS*/
+    .glid__title{
+        font-size: var(--font-xlarge);
+        padding-left: var(--spacing-12);
+        margin: var(--spacing-20) 0;
+    }
+
+    .glide__arrow--left{
+        left: 5px;
+    }
+    
+    .glide__arrow--right{
+        right: 5px;
+    }
 }

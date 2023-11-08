@@ -103,6 +103,12 @@
         background-color: var(--primary-solid);
     }
 
+.navbar__logo a{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
 /* Mobile */
 .navbar__img--mobile{
     display: none;
@@ -149,9 +155,10 @@
 
     /* Header */
     .header{
-        position: fixed;
+        position: sticky;
+        top: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 100;
     }
 
     /* Navbar */

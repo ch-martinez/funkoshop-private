@@ -1,7 +1,8 @@
 .card{
-    margin: 3px;
     position: relative;
     max-width: 360px;
+    height: 100%;
+    margin: 3px;
     background-color: var(--bg-light-solid);
     border: 1px solid rgba(0,0,0,.05);
     transition: var(--transition--01);
@@ -96,14 +97,14 @@
     line-height: 0;
 }
 
-.glide__arrow--left{
-    left: -15px;
-}
+    .glide__arrow--left{
+        left: -15px;
+    }
 
-.glide__arrow--right{
-    /* right: 17px; */
-    right: -15px;
-}
+    .glide__arrow--right{
+        /* right: 17px; */
+        right: -15px;
+    }
 
 
 @media (max-width: 767.98px){
@@ -112,6 +113,32 @@
         max-width: 100%;        
     }
     
+    .card__content{
+        gap: var(--spacing-8);
+    }
+    
+        .card__collection{
+            font-size: var(--font-tiny);
+        }
+    
+        .card__name{
+            font-size: var(--font-xsmall);
+        }
+    
+        .card__price{
+            font-size: var(--font-small);
+        }
+    
+        .card__payments{
+            font-size: var(--font-tiny);
+            color: var(--secondary-solid);
+        }
+
+    .new-item::after{
+        font-size: var(--font-tiny);
+        font-weight: 900;
+        padding: var(--spacing-4) var(--spacing-8);
+    }
 
     /* Seccion carousel - Libreria GlidJS*/
     .glid__title{

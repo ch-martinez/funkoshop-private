@@ -88,5 +88,32 @@
 
 
 @media (max-width: 767.98px) {
+    .amount{
+        margin: var(--spacing-28) 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-16);
+    }
 
+    .amount__btn-container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+    }
+
+    .amount__btn{
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-900);
+    }
+
+    .link__blue--payment{
+        font-size: var(--font-xsmall);
+        font-weight: 700;
+    }
+
+    .amount .btn-link{
+        width: 100%;
+    }
 }

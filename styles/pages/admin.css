@@ -163,7 +163,10 @@
     }
 
         /* Iconos editar y borrar */
+        .table-admin__row .table-admin__data:last-child{
+            gap: var(--spacing-8);
+        }
         .table-admin__btn{
-            width: 30px;
+            width: 35px;
         }
 }

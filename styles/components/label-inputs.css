@@ -172,8 +172,6 @@
         border: 2px solid var(--primary-solid);
     }
 
-
-
 /* Buttons */
 .btn{
     padding: var(--spacing-8) var(--spacing-16);
@@ -236,3 +234,18 @@
         background-color: var(--primary-solid);
         color: var(--font-light-solid);
     }
+
+/* RESPONSIVE - Mobile */
+@media (max-width: 767.98px){
+    .label{
+        font-size: var(--font-medium);
+    }
+    
+    .label--checkbox{
+        font-size: var(--font-xsmall);
+    }
+
+    .label--filter-price{
+        font-size: var(--font-xsmall);
+    }
+}

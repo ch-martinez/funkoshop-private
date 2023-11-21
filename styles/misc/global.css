@@ -86,7 +86,46 @@
     display: none !important;
 }
 
+.--no-scroll{
+    overflow-y: hidden;
+}
 
 @media (max-width: 767.98px) {
 
+    .container--main{
+        padding: var(--spacing-20) var(--spacing-8);
+    }
+    .container__title{
+        font-size: var(--font-large);
+    }
+
+    /* Amount */
+    .amount{
+        margin: var(--spacing-28) 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-16);
+    }
+
+    .amount__btn-container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+    }
+
+    .amount__btn{
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-900);
+    }
+
+    .link__blue--payment{
+        font-size: var(--font-xsmall);
+        font-weight: 700;
+    }
+
+    .amount .btn-link{
+        width: 100%;
+    }
 }

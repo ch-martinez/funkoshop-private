@@ -58,3 +58,9 @@
         display: inline-block;
         font-size: var(--font-small);
     }
+
+@media (max-width: 767.98px){
+    .login__form{
+        width: 100%;
+    }
+}

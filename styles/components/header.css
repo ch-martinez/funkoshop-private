@@ -85,15 +85,12 @@
 
 .submenu__item{
     text-wrap: nowrap;
+    background-color: var(--bg-dark-soft);
 }
 
 /* Hovers */
-    .navbar__item:hover, .navbar__item:focus-within{
+    .navbar__item:hover{
         background-color: var(--primary-solid);
-    }
-
-    .navbar__item:hover .submenu{
-        display: initial;
     }
 
     .navbar__cart:hover{
@@ -142,6 +139,11 @@
         color: var(--primary-solid);
     }
 
+    @media (min-width: 767.98px){
+        .navbar__item:hover .submenu{
+            display: initial;
+        }
+    }
 
 @media (max-width: 767.98px){
     /* Ocultar desktop */
@@ -171,7 +173,7 @@
         display: none;
     }
 
-    .navbar__menu, .submenu{
+    .navbar__menu{
         width: 100%;
         position: absolute;
         top: 100%;
@@ -179,7 +181,7 @@
         flex-direction: column;
         gap: 0;
         background-color: var(--bg-dark-solid);
-        border-top: 2px solid #FFF;
+        border-top: 2px solid var(--bg-dark-soft);
         transition: var(--transition--01);
     }
 
@@ -201,7 +203,7 @@
 
     .navbar__item{
         width: 100%;
-        border-bottom: 1px solid #FFF;
+        /* border-bottom: 1px solid #FFF; */
     }
     
     .navbar__link{
@@ -224,5 +226,14 @@
         right: -17px;
         font-size: var(--font-medium);
         color: var(--font-light-solid);
+    }
+
+    .--submenu-show{
+        display: block;
+    }
+
+    /* Hovers */
+    .navbar__item:hover, .navbar__item:focus-within{
+        background-color: inherit;
     }
 }

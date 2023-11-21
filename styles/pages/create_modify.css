@@ -24,7 +24,6 @@
     width: 100%;
 }
 
-
 /* Contenedor de carga de imagenes */
 .create-modify__picture-container{
     display: flex;
@@ -41,4 +40,25 @@
 
 .create-modify__picture img{
     border-bottom: 3px solid var(--primary-solid);
+}
+
+@media (max-width: 767.98px){
+    .create-modify__form{
+        gap: var(--spacing-16);
+        width: 100%;
+    }
+    .create-modify__container{
+        flex-direction: column;
+        gap: var(--spacing-16);
+    }
+
+    .create-modify__container:last-child .btn{
+        width: 100%;
+        height: 5.5rem;
+    }
+
+    .create-modify__container:last-child .create-modify__item{
+        flex-direction: column;
+        width: 100%;
+    }
 }

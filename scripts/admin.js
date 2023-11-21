@@ -17,5 +17,3 @@ const eliminar = (e) => {
     alert.querySelector('.alert-delet__text span').textContent = name
     alert.showModal();
 }
-
-

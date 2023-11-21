@@ -39,6 +39,11 @@
     margin-bottom: 10px;
 }
 
+/* Boton de filtros */
+.filters-mobile__btn{
+    display: none;
+}
+
 /* Shop list */
 
 .shop__container{
@@ -123,6 +128,7 @@
 
     /* Boton de filtros */
     .filters-mobile__btn{
+        display: initial;
         appearance: none;
         position: relative;
         border: 0;
@@ -153,6 +159,8 @@
 
     /* Shop list */
     .shop__container{
+        margin-top: var(--spacing-12);
+        margin-top: 3px;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -70,68 +70,71 @@
 
         <!-- Seccion lateral con filtros de busqueda y orden -->
         <aside class="filters__container">
-            <form class="filters__form" action="">
-
-                <!-- Buscar por item o categoria -->
-                <div class="filter">
-                    <label class="label label--filter" for="search">BUSCAR</label>
-                    <input class="input-text--box" id="search" type="text" placeholder="Item o categoria">
-                </div>
-
-                <!-- Ordenar items -->
-                <div class="filter">
-                    <label class="label label--filter" for="short">ORDENAR POR</label>
-                    <select class="input-select" name="short" id="short">
-                        <option value="precio_mayor">Mayor precio</option>
-                        <option value="precio_menor">Menor precio</option>
-                        <option value="nombre_az">Nombre A-Z</option>
-                        <option value="nombre_za">Nombre Z-A</option>
-                        <option value="destacado">Destacados</option>
-                    </select>
-                </div>
-
-                <!-- Filtrar items por precio -->
-                <div class="filter">
-                    <label class="label label--filter">PRECIO</label>
-                    <div class="filter--price">
-                        <label class="label--filter-price" for="min_price">MIN<input
-                                class="input-number--box input-hide-arrows" type="number" placeholder="0"
-                                min="0">-</label>
-                        <label class="label--filter-price" for="max_price">MAX<input
-                                class="input-number--box input-hide-arrows" type="number" placeholder="0"
-                                min="0"></label>
+            <button class="filters-mobile__btn">
+                <span>Ordenar y filtrar</span>
+                <iconify-icon icon="fluent:filter-12-filled"></iconify-icon>
+            </button>
+            <div class="filters__form-container">
+                <form class="filters__form" action="">
+                    <!-- Buscar por item o categoria -->
+                    <div class="filter">
+                        <label class="label label--filter" for="search">BUSCAR</label>
+                        <input class="input-text--box" id="search" type="text" placeholder="Item o categoria">
                     </div>
-                </div>
-
-                <!-- Filtrar items segun caracteristicas -->
-                <div class="filter">
-                    <label class="label label--filter">FILTRAR</label>
-                    <ul>
-                        <li class="filter__li">
-                            <input class="input-checkbox" type="checkbox" name="check_new" id="check_new">
-                            <label class="label--checkbox" for="check_new">NUEVOS</label>
-                        </li>
-                        <li class="filter__li">
-                            <input class="input-checkbox" type="checkbox" name="check_offer" id="check_offer">
-                            <label class="label--checkbox" for="check_offer">OFERTAS</label>
-                        </li>
-                        <li class="filter__li">
-                            <input class="input-checkbox" type="checkbox" name="check_special" id="check_special">
-                            <label class="label--checkbox" for="check_special">EDICIÓN ESPECIAL</label>
-                        </li>
-                        <li class="filter__li">
-                            <input class="input-checkbox" type="checkbox" name="check_fav" id="check_fav">
-                            <label class="label--checkbox" for="check_fav">FAVORITOS</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Botones -->
-                <div class="filter filter--btn">
-                    <button class="btn" type="reset">LIMPIAR</button>
-                    <button class="btn" type="submit">APLICAR</button>
-                </div>
-            </form>
+        
+                    <!-- Ordenar items -->
+                    <div class="filter">
+                        <label class="label label--filter" for="short">ORDENAR POR</label>
+                        <select class="input-select" name="short" id="short">
+                            <option value="precio_mayor">Mayor precio</option>
+                            <option value="precio_menor">Menor precio</option>
+                            <option value="nombre_az">Nombre A-Z</option>
+                            <option value="nombre_za">Nombre Z-A</option>
+                            <option value="destacado">Destacados</option>
+                        </select>
+                    </div>
+        
+                    <!-- Filtrar items por precio -->
+                    <div class="filter">
+                        <label class="label label--filter">PRECIO</label>
+                        <div class="filter--price">
+                            <label class="label--filter-price" for="min_price">MIN<input
+                                    class="input-number--box input-hide-arrows" type="number" placeholder="0" min="0">-</label>
+                            <label class="label--filter-price" for="max_price">MAX<input
+                                    class="input-number--box input-hide-arrows" type="number" placeholder="0" min="0"></label>
+                        </div>
+                    </div>
+        
+                    <!-- Filtrar items segun caracteristicas -->
+                    <div class="filter">
+                        <label class="label label--filter">FILTRAR</label>
+                        <ul>
+                            <li class="filter__li">
+                                <input class="input-checkbox" type="checkbox" name="check_new" id="check_new">
+                                <label class="label--checkbox" for="check_new">NUEVOS</label>
+                            </li>
+                            <li class="filter__li">
+                                <input class="input-checkbox" type="checkbox" name="check_offer" id="check_offer">
+                                <label class="label--checkbox" for="check_offer">OFERTAS</label>
+                            </li>
+                            <li class="filter__li">
+                                <input class="input-checkbox" type="checkbox" name="check_special" id="check_special">
+                                <label class="label--checkbox" for="check_special">EDICIÓN ESPECIAL</label>
+                            </li>
+                            <li class="filter__li">
+                                <input class="input-checkbox" type="checkbox" name="check_fav" id="check_fav">
+                                <label class="label--checkbox" for="check_fav">FAVORITOS</label>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Botones -->
+                    <div class="filter filter--btn">
+                        <button class="btn" type="reset">LIMPIAR</button>
+                        <button class="btn" type="submit">APLICAR</button>
+                    </div>
+                </form>
+            </div>
         </aside>
 
         <!-- Contenedor de items y paginador -->
@@ -222,6 +225,8 @@
     <!------ Scripts PROPIOS ------>
     <!-- <script src="/scripts/cart-counter.js"></script> -->
     <script src="/scripts/render-card.js"></script>
+    <script src="/scripts/item-quantity.js"></script>
+    <script src="/scripts/filter.js"></script>
 </body>
 
 </html>

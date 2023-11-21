@@ -52,13 +52,11 @@
     font-size: var(--font-jumbo);
 }
 
-
 /* RESPONSIVE - Mobile */
 @media (max-width: 767.98px){
 
-
     .item{
-        padding: var(--spacing-28) var(--spacing-12);
+        margin-bottom: var(--spacing-42);
         flex-direction: column;
         gap: var(--spacing-8);
     }

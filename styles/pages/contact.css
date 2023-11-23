@@ -78,3 +78,59 @@
     border: 1px solid var(--dark-500);
     height: 90%;
 }
+
+@media (max-width: 767.98px){
+
+    .contact__container{
+        width: 100%;
+        margin: 0;
+        padding: var(--spacing-12);
+        flex-direction: column-reverse;
+        gap: var(--spacing-36);
+        background-color: var(--bg-light-soft);
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .contact__ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: var(--spacing-8);
+    }
+
+    .contact__li{
+        background-color: var(--bg-light-solid);
+        border: 1px solid rgba(0,0,0,.05);
+        border-radius: 8px;
+    }
+
+    .contact__link{
+        height: 100%;
+        padding: var(--spacing-12);
+        gap: var(--spacing-4);
+        text-wrap: nowrap;
+    }
+        .contact__link iconify-icon{
+            font-size: var(--font-xlarge);
+        }
+
+        .contact__link h4{
+            font-size: var(--font-medium-20);
+            font-weight: 600;
+        }
+
+        .contact__link span{
+            font-size: var(--font-xsmall);
+        }
+    
+    .contact__form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Separador vertical entre el formulario y datos de contacto */
+    .separator{
+        display: none;
+    }
+}

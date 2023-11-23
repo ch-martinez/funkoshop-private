@@ -9,13 +9,20 @@
 </head>
 <body>
     <!------ Inicio header ------>
-    <header class="container--menu">
-        <nav class="navbar container">
+    <header class="header">
+        <nav class="navbar">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
+                    <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
+                    <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
                 </a>
             </picture>
+            <!-- Contenedor de items en responsive -->
+            <div class="navbar-mobile">
+                <button class="navbar-mobile__menu-btn" href="#">
+                    <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
+                </button>
+            </div>
 
             <!------ Menu de navegacion ------>
             <ul class="navbar__menu">

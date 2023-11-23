@@ -8,32 +8,39 @@
     <title>FS - Admin</title>
 </head>
 <body>
-    <!------ Inicio header ------>
-    <header class="container--menu">
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="/index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">                    
-                </a>
-            </picture>
+<!------ Inicio header ------>
+<header class="header">
+    <nav class="navbar">
+        <picture class="navbar__logo">
+            <a href="/index.html">
+                <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
+                <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
+            </a>
+        </picture>
+        <!-- Contenedor de items en responsive -->
+        <div class="navbar-mobile">
+            <button class="navbar-mobile__menu-btn" href="#">
+                <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
+            </button>
+        </div>
 
-            <!------ Menu de navegacion ------>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <!------ Menu de navegacion ------>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <main class="container container--admin">
         <!-- Seccion de busqueda item -->
@@ -82,9 +89,8 @@
     </main>
 
     <!------ Inicio footer ------>
-    <footer class="container--menu">
-        <section class="navbar navbar--footer container">
-
+    <footer class="footer">
+        <nav class="navbar">
             <!------ Menu de navegacion footer ------>
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
@@ -105,7 +111,7 @@
                     <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
                 </a>
             </picture>
-        </section>
+        </nav>
         
         <!------ Pie de pagina ------>
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
@@ -126,16 +132,12 @@
                 </a>
             </td>
         </tr>
-        
     </template>
-
-    
-    
 
     <!------ Scripts EXTERNOS ------>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
     <!------ Scripts PROPIOS ------>
-    <!-- <script src="/scripts/modal.js"></script> -->
+    <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
     <script src="/scripts/render-admin.js"></script>
     <script src="/scripts/admin.js"></script>
 </body>

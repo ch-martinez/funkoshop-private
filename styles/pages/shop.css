@@ -137,14 +137,15 @@
         display: flex;
         justify-content: center;
         gap: var(--spacing-12);
-        font-size: var(--font-medium);
+        font-size: var(--font-xsmall);
         font-weight: 500;
         text-transform: uppercase;
-        border-bottom: 1px solid var(--bg-dark-solid);
+        background-color: var(--bg-dark-soft);
+        color: var(--font-light-solid);
     }
 
     .filters__form-container{
-        height: calc(100vh - 100px);
+        height: calc(100vh - 95px);
         display: none;
         padding: var(--spacing-12);
     }

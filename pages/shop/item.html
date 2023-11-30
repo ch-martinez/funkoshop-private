@@ -69,44 +69,6 @@
     </header>
 
     <main class="container container--main">
-        <article class="item">
-            <!-- Imagen del Funko -->
-            <picture class="item__cover">
-                <img class="item__cover-front" src="/img/star-wars/baby-yoda-1.webp" alt="">
-                <img class="item__cover-back" src="/img/star-wars/baby-yoda-box.webp" alt="">
-            </picture>
-
-            <!-- Descripcion del Funko -->
-            <section class="item__content">
-                <span class="item__collection">star wars</span>
-                <span class="item__title">baby yoda blueball</span>
-                <span class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</span>
-                <span class="item__price">$ 1799,99</span>
-
-                <!-- Contenedor para la cantidad a agregar de items al carrito -->
-                <div class="amount">
-                    <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1">
-                    <!-- Botones para incrementar y decrementar cantidad de items -->
-                    <div class="amount__btn-container">
-                        <a id="btn__add" class="amount__btn" href="#"><img src="/img/icons/+.svg" alt=""></a>
-                        <a id="btn__substract" class="amount__btn" href="#"><img src="/img/icons/-.svg" alt="" srcset=""></a>
-                    </div>
-                    <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
-                </div>
-
-                <!-- Ver los metodos de pago -->
-                <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
-                <dialog id="modal" class="modal">
-                    <div id="modalClose" class="modal__close">
-                        <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
-                    </div>
-                    <picture>
-                        <img src="/img/medios_pagos.jpg" alt="Medios de pago">
-                    </picture>
-                </dialog>
-            </section>
-        </article>
-
         <!-- Seccion de relacionados -->
         <section class="glide glide--carousel">
             <h2 class="glid__title">PRODUCTOS RELACIONADOS<h2>
@@ -356,6 +318,46 @@
         <!------ Pie de pagina ------>
         <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+
+    <template id="template_item">
+        <article class="item">
+            <!-- Imagen del Funko -->
+            <picture class="item__cover">
+                <img class="item__cover-front" alt="">
+                <img class="item__cover-back" alt="">
+            </picture>
+
+            <!-- Descripcion del Funko -->
+            <section class="item__content">
+                <span class="item__collection"></span>
+                <span class="item__title"></span>
+                <span class="item__description"></span>
+                <span class="item__price"></span>
+
+                <!-- Contenedor para la cantidad a agregar de items al carrito -->
+                <div class="amount">
+                    <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1">
+                    <!-- Botones para incrementar y decrementar cantidad de items -->
+                    <div class="amount__btn-container">
+                        <button class="amount__btn btn--add" href="#">+</button>
+                        <button class="amount__btn btn--substract" href="#">-</button>
+                    </div>
+                    <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
+                </div>
+
+                <!-- Ver los metodos de pago -->
+                <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <dialog id="modal" class="modal">
+                    <div id="modalClose" class="modal__close">
+                        <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
+                    </div>
+                    <picture>
+                        <img src="/img/medios_pagos.jpg" alt="Medios de pago">
+                    </picture>
+                </dialog>
+            </section>
+        </article>
+    </template>
     <!------ Scripts EXTERNOS ------>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> <!-- Glide (Carrousel) -->
@@ -363,7 +365,9 @@
     <!------ Scripts PROPIOS ------>
     <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
     <script src="/scripts/glide-config.js"></script> <!-- Configuracion de libreria Glide -->
-    <script src="/scripts/modal.js"></script>
+    <!-- <script src="/scripts/modal.js"></script> -->
+    <script src="/scripts/render-item.js"></script>
     <script src="/scripts/item-quantity.js"></script>
+
 </body>
 </html>

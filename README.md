@@ -12,4 +12,7 @@ Este es un proyecto integrador como parte del challenge integrador para el curso
     - Grid
 - JavaScript
 - Node JS
+    - nodemon
+    - method-override
+    - ejs
 - Express JS

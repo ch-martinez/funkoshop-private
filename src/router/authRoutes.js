@@ -1,10 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const authController = require('../controllers/authController')
 
-router.get('/login', (req,res) => res.send('Pagina LOGIN'))
-router.post('/login', (req,res) => res.send('Pagina SE LOGUEA'))
-router.get('/register', (req,res) => res.send('Pagina REGISTRO'))
-router.post('/register', (req,res) => res.send('Pagina SE REGISTRA'))
-router.get('/logout', (req,res) => res.send('Pagina DESLOGUEO'))
+router.get('/login', authController.loginView)
+router.post('/login', authController.loginRequest)
+router.get('/register', authController.registerView)
+router.post('/register', authController.registerRequest)
+router.get('/logout', authController.logoutRequest)
 
 module.exports = router

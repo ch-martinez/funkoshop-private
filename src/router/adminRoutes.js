@@ -1,12 +1,13 @@
 const express = require('express')
 const router = express.Router()
+const adminController = require('../controllers/adminController')
 
-router.get('/', (req,res) => res.send('Pagina ADMIN'))
-router.get('/create', (req,res) => res.send('Pagina ADMIN, CREAR'))
-router.post('/create', (req,res) => res.send('Pagina ADMIN, SE CREA ITEM'))
-router.get('/edit/:id', (req,res) => res.send(`Pagina ADMIN, SE EDITA ${req.params.id}`))
-router.put('/edit/:id', (req,res) => res.send(`Pagina ADMIN, SE EDITA ${req.params.id}. CONFIRMADO`))
-router.delete('/delete/:id', (req,res) => res.send(`Pagina ADMIN, SE ELIMINA ${req.params.id}`))
+router.get('/', adminController.mainView)
+router.get('/create', adminController.createView)
+router.post('/create', adminController.createItem)
+router.get('/edit/:id', adminController.editView)
+router.put('/edit/:id', adminController.editItem)
+router.delete('/delete/:id', adminController.deletItem)
 
 
 module.exports = router

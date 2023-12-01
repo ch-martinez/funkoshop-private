@@ -2,7 +2,15 @@ const express = require('express')
 const app = express()
 const PORT = 3000
 
-/* Middelware */
+/* Override para habilitar los métodos PUT y DELET */
+const methodOverride = require('method-override')
+app.use(methodOverride('__method'))
+
+/* Motor de plantillas EJS */
+app.set('view engine', 'ejs')
+app.set('views', '/src/views')
+
+/* Middlewares */
 app.use(express.urlencoded({extended:false})) //Permite obtener la informacion de un formulario
 app.use(express.json()) //Permite leer json - dev
 

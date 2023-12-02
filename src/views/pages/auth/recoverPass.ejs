@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Recordar contraseña - FS</title>
+</head>
+<body>
+    <!------ Inicio header ------>
+    <header class="header">
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
+                    <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
+                </a>
+            </picture>
+            <!-- Contenedor de items en responsive -->
+            <div class="navbar-mobile">
+                <a class="navbar-mobile__cart" href="/pages/shop/cart.html">
+                    <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
+                    <div class="navbar__cart-count"></div>
+                </a>
+                <button class="navbar-mobile__menu-btn" href="#">
+                    <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
+                </button>
+            </div>
+
+            <!------ Menu de navegacion ------>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <span class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></span>
+                    <!------ Submenu desplegable de productos ------>
+                    <ul class="submenu">
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/pages/shop/shop.html">FUNKOS</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item navbar__cart">
+                    <a class="navbar__link" href="/pages/shop/cart.html">
+                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
+                        <div class="navbar__cart-count"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container container--main container--login">
+        <h2 class="container__title">RECUPERAR CONTRASEÑA</h2>
+        <span>Ingrese su correo con el que se ha registrado, se enviara un link para recuperar su contraseña</span>
+        <form action="" class="login__form">
+            <div class="form__box">
+                <label class="label" for="email">Correo electronico</label>
+                <input class="input-text--box" type="email" id="email" name="email" required>
+            </div>
+
+            <input class="btn form__submit" type="submit" value="Recuperar">
+        </form>
+    </main>
+
+    <!------ Inicio footer ------>
+    <footer class="footer">
+        <nav class="navbar">
+            <!------ Menu de navegacion footer ------>
+            <ul class="navbar__menu--footer">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture class="navbar-footer__logo">
+                <a href="/index.html">
+                    <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
+                </a>
+            </picture>
+        </nav>
+        
+        <!------ Pie de pagina ------>
+        <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <!------ Scripts EXTERNOS ------>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
+
+    <!------ Scripts PROPIOS ------>
+    <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
+</body>
+</html>

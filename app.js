@@ -8,7 +8,7 @@ app.use(methodOverride('__method'))
 
 /* Motor de plantillas EJS */
 app.set('view engine', 'ejs')
-app.set('views', '/src/views')
+app.set('views', 'src/views')
 
 /* Middlewares */
 app.use(express.urlencoded({extended:false})) //Permite obtener la informacion de un formulario
@@ -21,7 +21,7 @@ const adminRoutes = require('./src/router/adminRoutes')
 const shopRoutes = require('./src/router/shopRoutes')
 
 /* Se define carpeta de archivos estaticos "public" */
-//app.use(express.static('public'))
+app.use(express.static('public'))
 
 app.use('/', mainRoutes)
 app.use('/auth', authRoutes)

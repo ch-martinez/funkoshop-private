@@ -1,0 +1,16 @@
+<li>
+    <article class="card">
+        <a class="card__link" href="/pages/shop/id/<%- item.id %>">
+            <picture class="card__cover">
+                <img class="card__img-front" src="<%= item.image_front %>" alt="">
+                <img class="card__img-back" src="<%= item.image_back %>" alt="">
+            </picture>
+            <section class="card__content">
+                <span class="card__collection"><%= item.licence_id %></span>
+                <h4 class="card__name"><%= item.product_name %></h4>
+                <span class="card__price">$<%= item.price %></span>
+                <span class="card__payments"><%= item.dues %> Cuotas sin interés</span>
+            </section>
+        </a>
+    </article>
+</li>

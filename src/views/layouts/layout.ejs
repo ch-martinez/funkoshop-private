@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <!-- CSS Libreria glide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <title><%=view.title%></title>
+</head>
+<body>
+    <%- include('../partials/header.ejs',{view}) %>
+    <%- body %>
+    <%- include('../partials/footer.ejs',{view}) %>
+    <!------ Scripts EXTERNOS ------>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> <!-- Glide (Carrousel) -->
+    <!------ Scripts PROPIOS ------>
+    <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
+    <script src="/scripts/glide-config.js"></script> <!-- Configuracion de libreria Glide -->
+    <script src="/scripts/render-card.js"></script>
+</body>
+</html>

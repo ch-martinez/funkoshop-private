@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>FS - CONTACTO</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main class="container">
+        <section class="contact__container">
+            <!-- Formulario de contacto -->
+            <form class="contact__form" action="">
+                <h2 class="contact__title">Envianos un mensaje</h2>
+                <div class="form__box">
+                    <label class="label label--contact" for="name">Nombre</label>
+                    <input class="input-text--box" id="name" type="text" required>
+                </div>
+                <div class="form__box">
+                    <label class="label label--contact"  for="tel">Teléfono</label>
+                    <input class="input-text--box input-hide-arrows" id="tel" type="number">
+                </div>
+                <div class="form__box">
+                    <label class="label label--contact"  for="email">Email</label>
+                    <input class="input-text--box" id="email" type="email" required>
+                </div>
+                <div class="form__box">
+                    <label class="label label--contact"  for="consult">Consulta</label>
+                    <textarea class="input-textarea" name="" id="consult" cols="25" rows="4" required></textarea>
+                </div>
+                <button class="btn" type="submit">ENVIAR</button>
+            </form>
+            <!-- Div visual para separacion -->
+            <div class="separator"></div>
+
+            <!-- Informacion de contacto -->
+            <section class="contact__info-container">
+                <ul class="contact__ul">
+                    <li class="contact__li">
+                        <a href="" class="contact__link">
+                            <iconify-icon icon="formkit:whatsapp"></iconify-icon>
+                            <h4>Telefono</h4>
+                            <span>+0098 9893 5647</span>
+                            <span>+0096 3434 5678</span>
+                        </a>
+                    </li>
+                    <li class="contact__li">
+                        <a href="" class="contact__link">
+                            <iconify-icon icon="ic:round-mail"></iconify-icon>
+                            <h4>Email</h4>
+                            <span>contacto@funkoshop.com.ar</span>
+                        </a>
+                    </li>
+                    <li class="contact__li">
+                        <a href="" class="contact__link">
+                            <iconify-icon icon="fe:facebook"></iconify-icon>
+                            <h4>Facebook</h4>
+                            <span>/funkoshop_ar</span>
+                        </a>
+                    </li>
+                    <li class="contact__li">
+                        <a href="" class="contact__link">
+                            <iconify-icon icon="ri:instagram-fill"></iconify-icon>
+                            <h4>Instagram</h4>
+                            <span>@funkoshop_ar</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+    <!------ Scripts EXTERNOS ------>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!------ Scripts PROPIOS ------>
+    <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
+</body>
+</html>

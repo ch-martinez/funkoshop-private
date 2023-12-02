@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -9,118 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <!-- Estilos propios -->
     <link rel="stylesheet" href="/styles/index.css">
-    <title>FunkoShop</title>
+    <title>Item - FS</title>
 </head>
 <body>
-    <!------ Inicio header ------>
-    <header class="header">
-        <nav class="navbar">
-            <picture class="navbar__logo">
-                <a href="/index.html">
-                    <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
-                    <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
-                </a>
-            </picture>
-            <!-- Contenedor de items en responsive -->
-            <div class="navbar-mobile">
-                <a class="navbar-mobile__cart" href="/pages/shop/cart.html">
-                    <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                    <div class="navbar__cart-count"></div>
-                </a>
-                <button class="navbar-mobile__menu-btn" href="#">
-                    <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
-                </button>
-            </div>
-
-            <!------ Menu de navegacion ------>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <span class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></span>
-                    <!------ Submenu desplegable de productos ------>
-                    <ul class="submenu">
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/shop.html">FUNKOS</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/starwars.html">STAR WARS</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/pokemon.html">POKEMON</a>
-                        </li>
-                        <li class="submenu__item navbar__item">
-                            <a class="navbar__link" href="/pages/shop/harrypotter.html">HARRY POTTER</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
-                </li>
-                <li class="navbar__item navbar__cart">
-                    <a class="navbar__link" href="/pages/shop/cart.html">
-                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                        <div class="navbar__cart-count"></div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!------ Seccion HERO (Banner) ------>
-    <section class="hero">
-        <article class="hero__content container">
-            <h2 class="hero__title">Nuevos Ingresos</h2>
-            <p class="hero__description">Descubrí el próximo Funko Pop de tu colección</p>
-            <a class="btn-link-rounded btn-link-rounded--hero" href="/pages/shop/shop.html">shop</a>
-        </article>
-    </section>
-
+    <%- include('../../partials/header.ejs') %>
     <main class="container container--main">
-
-        <!------ Seccion de colecciones destacadas ------>
-        <section class="collections__container">
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">star wars & the mandalorian</h3>
-                    <p class="collection__description">Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/starwars.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/star-wars/baby-yoda-1.webp" alt="">
-                </picture>
-            </article>
-
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">pokemon indigo</h3>
-                    <p class="collection__description">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/pokemon.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/pokemon/vulpix-1.webp" alt="">
-                </picture>
-            </article>
-
-            <article class="collection">
-                <section class="collection__content">
-                    <h3 class="collection__title">harry potter</h3>
-                    <p class="collection__description">Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <hr class="collection__line">
-                    <a class="btn-link-rounded" href="/pages/shop/harrypotter.html">Ver colección</a>
-                </section>
-                <picture class="collection__picture">
-                    <img src="/img/harry-potter/snape-patronus-1.webp" alt="">
-                </picture>
-            </article>
-        </section>
-
-        <!------ Seccion de ultimos lanzamientos ------>
+        <!-- Seccion de relacionados -->
         <section class="glide glide--carousel">
-            <h2 class="glid__title">ÚLTIMOS LANZAMIENTOS<h2>
+            <h2 class="glid__title">PRODUCTOS RELACIONADOS<h2>
             <!-- Slide de cards -->
             <section class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -341,40 +237,56 @@
             </div>
         </section>
     </main>
-
-    <!------ Inicio footer ------>
-    <footer class="footer">
-        <nav class="navbar">
-            <!------ Menu de navegacion footer ------>
-            <ul class="navbar__menu--footer">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
-                </li>
-            </ul>
-            <picture class="navbar-footer__logo">
-                <a href="/index.html">
-                    <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
-                </a>
+    <%- include('../../partials/footer.ejs') %>
+    <template id="template_item">
+        <article class="item">
+            <!-- Imagen del Funko -->
+            <picture class="item__cover">
+                <img class="item__cover-front" alt="">
+                <img class="item__cover-back" alt="">
             </picture>
-        </nav>
-        
-        <!------ Pie de pagina ------>
-        <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
 
+            <!-- Descripcion del Funko -->
+            <section class="item__content">
+                <span class="item__collection"></span>
+                <span class="item__title"></span>
+                <span class="item__description"></span>
+                <span class="item__price"></span>
+
+                <!-- Contenedor para la cantidad a agregar de items al carrito -->
+                <div class="amount">
+                    <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1">
+                    <!-- Botones para incrementar y decrementar cantidad de items -->
+                    <div class="amount__btn-container">
+                        <button class="amount__btn btn--add" href="#">+</button>
+                        <button class="amount__btn btn--substract" href="#">-</button>
+                    </div>
+                    <a class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</a>
+                </div>
+
+                <!-- Ver los metodos de pago -->
+                <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+                <dialog id="modal" class="modal">
+                    <div id="modalClose" class="modal__close">
+                        <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
+                    </div>
+                    <picture>
+                        <img src="/img/medios_pagos.jpg" alt="Medios de pago">
+                    </picture>
+                </dialog>
+            </section>
+        </article>
+    </template>
     <!------ Scripts EXTERNOS ------>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> <!-- Glide (Carrousel) -->
-    
+
     <!------ Scripts PROPIOS ------>
     <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
     <script src="/scripts/glide-config.js"></script> <!-- Configuracion de libreria Glide -->
-    <script src="/scripts/render-card.js"></script>
+    <!-- <script src="/scripts/modal.js"></script> -->
+    <script src="/scripts/render-item.js"></script>
+    <script src="/scripts/item-quantity.js"></script>
+
 </body>
 </html>

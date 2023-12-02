@@ -17,39 +17,57 @@
                 <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
             </button>
         </div>
-
         <!------ Menu de navegacion ------>
-        <ul class="navbar__menu">
-            <li class="navbar__item with-submenu">
-                <span class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></span>
-                <!------ Submenu desplegable de productos ------>
-                <ul class="submenu">
-                    <li class="submenu__item navbar__item">
-                        <a class="navbar__link" href="/shop">FUNKOS</a>
-                    </li>
-                    <li class="submenu__item navbar__item">
-                        <a class="navbar__link" href="/shop/starwars.html">STAR WARS</a>
-                    </li>
-                    <li class="submenu__item navbar__item">
-                        <a class="navbar__link" href="/shop/pokemon.html">POKEMON</a>
-                    </li>
-                    <li class="submenu__item navbar__item">
-                        <a class="navbar__link" href="/shop/harrypotter.html">HARRY POTTER</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/auth/login">LOGIN</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/contact">CONTACTO</a>
-            </li>
-            <li class="navbar__item navbar__cart">
-                <a class="navbar__link" href="/shop/cart">
-                    <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
-                    <div class="navbar__cart-count"></div>
-                </a>
-            </li>
-        </ul>
+        <%if (view.main) {%>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <span class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></span>
+                    <!------ Submenu desplegable de productos ------>
+                    <ul class="submenu">
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/shop">FUNKOS</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/shop/starwars.html">STAR WARS</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/shop/pokemon.html">POKEMON</a>
+                        </li>
+                        <li class="submenu__item navbar__item">
+                            <a class="navbar__link" href="/shop/harrypotter.html">HARRY POTTER</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/auth/login">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/contact">CONTACTO</a>
+                </li>
+                <li class="navbar__item navbar__cart">
+                    <a class="navbar__link" href="/shop/cart">
+                        <img src="/img/icons/cart-icon.svg" alt="Carrito de compras">
+                        <div class="navbar__cart-count"></div>
+                    </a>
+                </li>
+            </ul>
+        <%}else{%>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
+                </li>
+            </ul>
+        <%}%>
     </nav>
 </header>
+
+

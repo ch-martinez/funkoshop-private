@@ -1,5 +1,13 @@
+const items = require('../services/itemsServices')
+
 const mainView = (req,res) => {
-    res.render('pages/shop/shop')
+    const view = {
+        title: 'Shop - FS',
+        main: true
+    }
+    const dbProducts = items.getAllItems()
+    console.log(dbProducts)
+    res.render('pages/shop/shop', {view, dbProducts})
 }
 const itemView = (req,res) => res.send(`Pagina ITEM: ${req.params.id}`)
 const itemAddCart = (req,res) => res.send(`Pagina ITEM ${req.params.id} añadido a carrito`)

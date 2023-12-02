@@ -1,0 +1,43 @@
+<!------ Inicio footer ------>
+<footer class="footer">
+    <nav class="navbar">
+        <!------ Menu de navegacion footer ------>
+        <%if (view.main){%>
+            <ul class="navbar__menu--footer">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/shop">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/auth/login">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/contact">CONTACTO</a>
+                </li>
+            </ul>
+        <%}else{%>
+            <ul class="navbar__menu--footer">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/shop/shop">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/admin/admin">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/auth/register">REGISTRAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/auth/login">SALIR</a>
+                </li>
+            </ul>
+        <%}%>
+        <picture class="navbar-footer__logo">
+            <a href="/">
+                <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
+            </a>
+        </picture>
+    </nav>
+
+    <!------ Pie de pagina ------>
+    <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+

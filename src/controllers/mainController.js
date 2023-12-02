@@ -1,5 +1,9 @@
 const homeView = (req,res) => {
-    res.render('home')
+    const view = {
+        title: 'FunkoShop',
+        main: true
+    }
+    res.render('home',{view})
 }
 const contactView = (req,res) => {
     res.render('pages/contact')

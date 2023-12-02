@@ -10,6 +10,11 @@ app.use(methodOverride('__method'))
 app.set('view engine', 'ejs')
 app.set('views', 'src/views')
 
+/* Motor de layouts para EJS */
+const ejsLayaouts = require('express-ejs-layouts')
+app.use(ejsLayaouts)
+app.set('layout', 'layouts/layout')
+
 /* Middlewares */
 app.use(express.urlencoded({extended:false})) //Permite obtener la informacion de un formulario
 app.use(express.json()) //Permite leer json - dev

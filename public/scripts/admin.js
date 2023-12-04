@@ -1,19 +1,24 @@
-const alert = document.querySelector('.alert-delet');
-const alertCancel = document.querySelector('#alertCancel');
+const tableAdmin = document.querySelector('.table-admin');
+const alertDelet = document.querySelector('.alert-delet');
+const alertDeletForm = document.querySelector('#alert-delet__form');
+const alertDeletBtnCancel = document.querySelector('.btn--admin-delet');
 
-table.addEventListener('click', (e) => {
+tableAdmin.addEventListener('click', (e) => {
     if (e.target.classList.contains('alert-delet__btn')){
         eliminar(e)
     }
 })
 
-alertCancel.addEventListener('click',() => {
-    alert.close()
-});
-
+/* Alerta de eliminacion */
 const eliminar = (e) => {
     const item = e.target.parentNode.parentNode.parentNode 
     const name = item.querySelector('.table-admin__data:nth-child(3)').textContent
-    alert.querySelector('.alert-delet__text span').textContent = name
-    alert.showModal();
+    const id = item.querySelector('.table-admin__data:first-child').textContent
+    alertDeletForm.setAttribute('action',`/admin/delete/${id}`)//?_method=DELETE
+    alertDelet.querySelector('.alert-delet__text span').textContent = name
+    alertDelet.showModal();
 }
+
+alertDeletBtnCancel.addEventListener('click',() => {
+    alertDelet.close()
+});

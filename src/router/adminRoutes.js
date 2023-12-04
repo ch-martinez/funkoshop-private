@@ -8,6 +8,7 @@ router.post('/create', adminController.createItem)
 router.get('/edit/:id', adminController.editView)
 router.put('/edit/:id', adminController.editItem)
 router.delete('/delete/:id', adminController.deletItem)
+router.post('/delete/:id', adminController.deletItem)
 
 
 module.exports = router

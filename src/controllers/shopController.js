@@ -6,13 +6,27 @@ const mainView = (req,res) => {
         main: true
     }
     const dbProducts = items.getAllItems()
-    console.log(dbProducts)
     res.render('pages/shop/shop', {view, dbProducts})
 }
-const itemView = (req,res) => res.send(`Pagina ITEM: ${req.params.id}`)
+
+const itemView = (req,res) => {
+    const dbProducts = items.getAllItems()
+    const item = items.getItem(req.params.id)
+    const view = {
+        title: `${item.product_name} - FS`,
+        main: true,
+        glide: true
+    }
+   res.render('pages/shop/item', {view, item, dbProducts})
+} 
+
 const itemAddCart = (req,res) => res.send(`Pagina ITEM ${req.params.id} añadido a carrito`)
 const cartView =(req,res) => {
-    res.render('pages/shop/cart')
+    const view = {
+        title: 'Carrito - FS',
+        main: true
+    }
+    res.render('pages/shop/cart', {view})
 }
 const cartConfirm = (req,res) => res.send('Pagina CONFIRMACION DE COMPRA')
 

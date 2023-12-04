@@ -1,6 +1,6 @@
-<li>
+<li <%if (glide) {%>class="glide__slide"<%}%>>
     <article class="card">
-        <a class="card__link" href="/pages/shop/id/<%- item.id %>">
+        <a class="card__link" href="/shop/item/<%= item.product_id %>">
             <picture class="card__cover">
                 <img class="card__img-front" src="<%= item.image_front %>" alt="">
                 <img class="card__img-back" src="<%= item.image_back %>" alt="">

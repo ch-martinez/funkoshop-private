@@ -1,6 +1,6 @@
 /* Base de datos provisoria en JSON de los productos */
 const fs = require('fs')
-const route = './src/models/db.json'
+const route = './src/models/productsDB.json'
 
 const getAllItems = () => {
     return res = JSON.parse(fs.readFileSync(route))

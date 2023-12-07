@@ -13,12 +13,12 @@
             <span class="item__description"><%= item.product_description %></span>
             <span class="item__price">$<%= item.price %></span>
             <!-- Contenedor para la cantidad a agregar de items al carrito -->
-            <form class="amount" action="/item/<%= item.product_id %>/add" method="post">
-                <input id="amount__input" class="amount__input input-hide-arrows" type="number" value="1" min="1" max="<%= item.stock %>">
+            <form class="quantity" action="/item/<%= item.product_id %>/add" method="post">
+                <input id="quantity__input" class="quantity__input input-hide-arrows" type="number" value="1" min="1" max="<%= item.stock %>">
                 <!-- Botones para incrementar y decrementar cantidad de items -->
-                <div class="amount__btn-container">
-                    <a class="amount__btn btn--add" href="#">+</a>
-                    <a class="amount__btn btn--substract" href="#">-</a>
+                <div class="quantity__btn-container">
+                    <button class="quantity__btn btn--add" type="button">+</button>
+                    <button class="quantity__btn btn--substract" type="button">-</button>
                 </div>
                 <button class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</button>
             </form>
@@ -42,4 +42,5 @@
         <%- include('../../components/glide.ejs', {dbProducts} )%>
     </section>
 </main>
-<script src="/scripts/item-quantity.js"></script>
+<script src="/scripts/modal.js"></script>
+<script src="/scripts/itemQuantity.js"></script>

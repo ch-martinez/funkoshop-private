@@ -1,144 +1,64 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
-    <link rel="stylesheet" href="/styles/index.css">
-    <title>FS - Admin</title>
-</head>
-<body>
-<!------ Inicio header ------>
-<header class="header">
-    <nav class="navbar">
-        <picture class="navbar__logo">
-            <a href="/index.html">
-                <img class="navbar__img" src="/img/branding/logo_light_horizontal.svg" alt="FunkoShop Logo">
-                <img class="navbar__img--mobile" src="/img/branding/isotype.svg" alt="FunkoShop Logo">
+<main class="container container--admin">
+    <!-- Seccion de busqueda item -->
+    <section class="admin-search__container">
+        <label for="search">
+            <picture><img src="/img/icons/search_icon.svg" alt="Buscar item"></picture>
+        </label>
+        <input class="input-text--box admin-search__input" id="search" type="search" placeholder="Código, nombre o categoria">
+    </section>
+
+    <!-- Cabecera de tabla para agregar item -->
+    <section class="table-admin-head__container">
+        <h1 class="table-admin-head__title">LISTADO DE PRODUCTOS</h1>
+        <div>
+            <a class="table-admin-head__add" href="/admin/create">
+                <span>AGREGAR</span>
+                <picture>
+                    <img src="/img/icons/+.svg" alt="Agregar item">
+                </picture>
             </a>
-        </picture>
-        <!-- Contenedor de items en responsive -->
-        <div class="navbar-mobile">
-            <button class="navbar-mobile__menu-btn" href="#">
-                <iconify-icon icon="game-icons:hamburger-menu"></iconify-icon>
-            </button>
         </div>
+    </section>
 
-        <!------ Menu de navegacion ------>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/pages/admin/create.html">AGREGAR</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- Listado de items -->
+    <table class="table-admin">
+        <thead>
+            <tr>
+                <th class="table-admin__data--head table-admin__data">ID</t>
+                <th class="table-admin__data--head table-admin__data">Código</th>
+                <th class="table-admin__data--head table-admin__data">Nombre del producto</th>
+                <th class="table-admin__data--head table-admin__data" colspan="2">Categoria</th>
+            </tr>
+            <tbody id="tbody">
+                <% products.forEach((product) => {%>
+                    <tr class="table-admin__row">
+                        <td class="table-admin__data"><%= product.product_id %></td>
+                        <td class="table-admin__data"><%= product.sku %></td>
+                        <td class="table-admin__data"><%= product.product_name %></td>
+                        <td class="table-admin__data"><%= product.licence_name %></td>
+                        <td class="table-admin__data">
+                            <a class="table-admin__btn" href="/admin/edit/<%= product.product_id %>">
+                                <img src="/img/icons/edit_pencil.svg" alt="Editar item">
+                            </a>
+                            <a class="table-admin__btn" href="#">
+                                <img class="alert-delet__btn" src="/img/icons/delete_trash.svg" alt="Eliminar item">
+                            </a>
+                        </td>
+                    </tr>
+                <%})%>
+            </tbody>
 
-    <main class="container container--admin">
-        <!-- Seccion de busqueda item -->
-        <section class="admin-search__container">
-            <label for="search">
-                <picture><img src="/img/icons/search_icon.svg" alt="Buscar item"></picture>
-            </label>
-            <input class="input-text--box admin-search__input" id="search" type="search" placeholder="Código, nombre o categoria">
-        </section>
-
-        <!-- Cabecera de tabla para agregar item -->
-        <section class="table-admin-head__container">
-            <h1 class="table-admin-head__title">LISTADO DE PRODUCTOS</h1>
-            <div>
-                <a class="table-admin-head__add" href="/pages/admin/create.html">
-                    <span>AGREGAR</span>
-                    <picture>
-                        <img src="/img/icons/+.svg" alt="Agregar item">
-                    </picture>
-                </a>
-            </div>
-        </section>
-
-        <!-- Listado de items -->
-        <table class="table-admin">
-            <thead>
-                <tr>
-                    <th class="table-admin__data--head table-admin__data">ID</t>
-                    <th class="table-admin__data--head table-admin__data">Código</th>
-                    <th class="table-admin__data--head table-admin__data">Nombre del producto</th>
-                    <th class="table-admin__data--head table-admin__data" colspan="2">Categoria</th>
-                </tr>
-                <tbody id="tbody">
-
-                </tbody>
-
-                <dialog class="alert-delet">
-                    <p class="alert-delet__text">¿Eliminar el item <span></span>?</p>
-                    <div class="alert-delet__buttons-container">
-                        <button class="btn btn--admin-confirm">Confirmar</button>
-                        <button id="alertCancel" class="btn btn--admin-delet">Cancelar</button>
-                    </div>
-                </dialog>
-            </thead>
-        </table>
-    </main>
-
-    <!------ Inicio footer ------>
-    <footer class="footer">
-        <nav class="navbar">
-            <!------ Menu de navegacion footer ------>
-            <ul class="navbar__menu--footer">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/shop/shop.html">VER TIENDA</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/register.html">REGISTRAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
-                </li>
-            </ul>
-            <picture class="navbar-footer__logo">
-                <a href="/index.html">
-                    <img src="/img/branding/isotype.svg" alt="FunkoShop Logo">
-                </a>
-            </picture>
-        </nav>
-        
-        <!------ Pie de pagina ------>
-        <p class="footer__rights">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
-
-    <template id="template_admin">
-        <tr class="table-admin__row">
-            <td class="table-admin__data"></td>
-            <td class="table-admin__data"></td>
-            <td class="table-admin__data"></td>
-            <td class="table-admin__data"></td>
-            <td class="table-admin__data">
-                <a class="table-admin__btn" href="/pages/admin/modify.html">
-                    <img src="/img/icons/edit_pencil.svg" alt="">
-                </a>
-                <a class="table-admin__btn" href="#">
-                    <img class="alert-delet__btn" src="/img/icons/delete_trash.svg" alt="Eliminar item">
-                </a>
-            </td>
-        </tr>
-    </template>
-
-    <!------ Scripts EXTERNOS ------>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- Iconos -->
-    <!------ Scripts PROPIOS ------>
-    <script src="/scripts/navbar.js"></script> <!-- Configuracion menu navegacion -->
-    <script src="/scripts/render-admin.js"></script>
-    <script src="/scripts/admin.js"></script>
-</body>
-</html>
+            <dialog class="alert-delet">
+                <form id="alert-delet__form" method="POST">
+                    <p class="alert-delet__text">¿Eliminar el producto <span></span>?</p>
+                    <menu class="alert-delet__buttons-container">
+                        <button class="btn btn--admin-confirm" type="submit">Confirmar</button>
+                        <button class="btn btn--admin-delet" type="reset">Cancelar</button>
+                    </menu>
+                </form>
+            </dialog>
+        </thead>
+    </table>
+</main>
+<script src="/scripts/admin.js"></script>
+<script src="/scripts/modal.js"></script>

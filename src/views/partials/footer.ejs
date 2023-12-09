@@ -2,7 +2,7 @@
 <footer class="footer">
     <nav class="navbar">
         <!------ Menu de navegacion footer ------>
-        <%if (view.main){%>
+        <%if (!view.logged) {%>
             <ul class="navbar__menu--footer">
                 <li class="navbar__item">
                     <a class="navbar__link" href="/shop">SHOP</a>
@@ -26,7 +26,7 @@
                     <a class="navbar__link" href="/auth/register">REGISTRAR</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/auth/login">SALIR</a>
+                    <a class="navbar__link" href="/auth/logout">SALIR</a>
                 </li>
             </ul>
         <%}%>

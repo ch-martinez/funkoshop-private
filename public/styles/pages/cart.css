@@ -56,8 +56,8 @@
     text-align: start;
 }
 
-/* Fix center amount in table */
-.amount--table{
+/* Fix center quantity in table */
+.quantity--table{
     width: fit-content;
     margin: 0 auto;
 }
@@ -131,18 +131,18 @@
         width: 90px;
     }
 
-    /* Amount */
-    .amount--table{
+    /* quantity */
+    .quantity--table{
         gap: var(--spacing-8);
     }
 
-        .amount--table .amount__input{
+        .quantity--table .quantity__input{
             width: 60px;
             font-size: var(--font-small);
             font-weight: 560;
         }
 
-        .amount--table .amount__btn{
+        .quantity--table .quantity__btn{
             width: 25px;
             height: 25px;
         }

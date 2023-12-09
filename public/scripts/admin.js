@@ -14,7 +14,7 @@ const eliminar = (e) => {
     const item = e.target.parentNode.parentNode.parentNode 
     const name = item.querySelector('.table-admin__data:nth-child(3)').textContent
     const id = item.querySelector('.table-admin__data:first-child').textContent
-    alertDeletForm.setAttribute('action',`/admin/delete/${id}`)//?_method=DELETE
+    alertDeletForm.setAttribute('action',`/admin/delete/${id}?_method=DELETE`)
     alertDelet.querySelector('.alert-delet__text span').textContent = name
     alertDelet.showModal();
 }

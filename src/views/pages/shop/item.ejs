@@ -2,29 +2,29 @@
     <article class="item">
         <!-- Imagen del Funko -->
         <picture class="item__cover">
-            <img class="item__cover-front" src="<%= item.image_front %>" alt="<%= item.product_description %>">
-            <img class="item__cover-back" src="<%= item.image_back %>" alt="<%= item.product_description %>">
+            <img class="item__cover-front" src="/img/<%= product.image_front %>" alt="<%= product.product_description %>">
+            <img class="item__cover-back" src="/img/<%= product.image_back %>" alt="<%= product.product_description %>">
         </picture>
 
         <!-- Descripcion del Funko -->
         <section class="item__content">
-            <span class="item__collection"><%= item.licence_id %></span>
-            <span class="item__title"><%= item.product_name %></span>
-            <span class="item__description"><%= item.product_description %></span>
-            <span class="item__price">$<%= item.price %></span>
+            <span class="item__collection"><%= product.licence_name %></span>
+            <span class="item__title"><%= product.product_name %></span>
+            <span class="item__description"><%= product.product_description %></span>
+            <span class="item__price">$<%= product.price %></span>
             <!-- Contenedor para la cantidad a agregar de items al carrito -->
-            <form class="quantity" action="/item/<%= item.product_id %>/add" method="post">
-                <input id="quantity__input" class="quantity__input input-hide-arrows" type="number" value="1" min="1" max="<%= item.stock %>">
+            <form class="quantity" action="/shop/cart" method="GET" enctype="application/x-www-form-urlencoded">
+                <input id="quantity__input" class="quantity__input input-hide-arrows" type="number" value="1" min="1" max="<%= product.stock %>">
                 <!-- Botones para incrementar y decrementar cantidad de items -->
                 <div class="quantity__btn-container">
                     <button class="quantity__btn btn--add" type="button">+</button>
                     <button class="quantity__btn btn--substract" type="button">-</button>
                 </div>
-                <button class="btn-link" href="/pages/shop/cart.html">Agregar al carrito</button>
+                <button class="btn-link">Agregar al carrito</button>
             </form>
 
             <!-- Ver los metodos de pago -->
-            <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - <%= item.dues %> CUOTAS SIN INTERÉS</a>
+            <a id="modalOpen" class="link__blue link__blue--payment" href="#">Ver métodos de pago - <%= product.dues %> CUOTAS SIN INTERÉS</a>
             <dialog id="modal" class="modal">
                 <div id="modalClose" class="modal__close">
                     <iconify-icon icon="icon-park-outline:close-one" width="28" height="28"></iconify-icon>
@@ -39,7 +39,7 @@
     <section class="glide glide--carousel">
         <h2 class="glid__title">PRODUCTOS RELACIONADOS<h2>
         <!-- Slide de cards -->
-        <%- include('../../components/glide.ejs', {dbProducts} )%>
+        <%- include('../../components/glide.ejs', {products} )%>
     </section>
 </main>
 <script src="/scripts/modal.js"></script>

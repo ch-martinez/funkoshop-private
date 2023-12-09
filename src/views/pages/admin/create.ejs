@@ -1,95 +1,96 @@
 <main class="container container--main">
     <h1 class="container__title">Crear nuevo item</h1>
-    <form class="create-modify__form" action="">
+    <form class="create-modify__form" action="/admin/create" method="POST" enctype="multipart/form-data">
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-categoria">Categoria:</label>
-                <select class="input-select" name="admin-licence" id="">
-                    <option value="none">---</option>
-                    <option value="FC">Figuras coleccionables</option>
+                <label class="label label--admin" for="category_id">Categoria:</label>
+                <select class="input-select" name="category_id" id="">
+                    <option value="0">---</option>
+                    <option value="1">FUNKOS</option>
                 </select>
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-licence">Licencia:</label>
-                <select class="input-select" name="admin-categoria" id="">
-                    <option value="none">---</option>
-                    <option value="STW">STAR WARS</option>
-                    <option value="PKM">POKEMON</option>
-                    <option value="HPT">HARRY POTTER</option>
+                <label class="label label--admin" for="licence_id">Licencia:</label>
+                <select class="input-select" name="licence_id" id="">
+                    <option value="0">---</option>
+                    <option value="1">POKEMON</option>
+                    <option value="2">STAR WARS</option>
+                    <option value="3">HARRY POTTER</option>
                 </select>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-name">Nombre del producto:</label>
-                <input class="input-text" name="admin-name" type="text" placeholder="Nombre" required>
+                <label class="label label--admin" for="product_name">Nombre del producto:</label>
+                <input class="input-text" name="product_name" type="text" placeholder="Nombre" required>
             </div>
         </div>
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <textarea class="input-textarea" placeholder="Descripción del producto" name="" id="" cols="30"
+                <textarea class="input-textarea" placeholder="Descripción del producto" name="product_description" id="" cols="30"
                     rows="6"></textarea>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-sku">SKU:</label>
-                <input class="input-text" name="admin-sku" type="text" placeholder="XXX00010001" required>
+                <label class="label label--admin" for="sku">SKU:</label>
+                <input class="input-text" name="sku" type="text" placeholder="XXX00010001" required>
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-price">Precio:</label>
-                <input class="input-number input-hide-arrows" name="admin-price" type="number" min="0"
+                <label class="label label--admin" for="price">Precio:</label>
+                <input class="input-number input-hide-arrows" name="price" type="number" min="0"
                     placeholder="$0.00" required>
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-stock">Stock:</label>
-                <input class="input-number input-hide-arrows" name="admin-stock" type="number" min="0"
+                <label class="label label--admin" for="stock">Stock:</label>
+                <input class="input-number input-hide-arrows" name="stock" type="number" min="0"
                     placeholder="1" required>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-discount">Descuento:</label>
-                <input class="input-number input-hide-arrows" name="admin-discount" type="number" min="0"
+                <label class="label label--admin" for="discount">Descuento:</label>
+                <input class="input-number input-hide-arrows" name="discount" type="number" min="0"
                     placeholder="00%" required>
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-payments">Cuotas:</label>
-                <select class="input-select" name="admin-payments" id="">
-                    <option value="0c">Sin cuotas</option>
-                    <option value="3si">3 cuotas</option>
-                    <option value="6si">6 cuotas</option>
-                    <option value="12si">12 cuotas</option>
-                    <option value="24ci">24 cuotas</option>
+                <label class="label label--admin" for="dues">Cuotas:</label>
+                <select class="input-select" name="dues" id="">
+                    <option value="0">Sin cuotas</option>
+                    <option value="3">3 cuotas</option>
+                    <option value="6">6 cuotas</option>
+                    <option value="9">9 cuotas</option>
+                    <option value="12">12 cuotas</option>
                 </select>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__picture-container">
-                <label for="admin-cover-front" class="create-modify__picture">
-                    <picture><img src="/img/pokemon/pikachu-1.webp" alt=""></picture>
+                <label for="images" class="create-modify__picture">
+                    <picture><img src="/img/pokemon/pikachu-1.webp"></picture>
                     <span>FRENTE</span>
                 </label>
-                <input id="admin-cover-front" name="admin-cover-front" accept="image/png,image/jpeg" type="file" required>
             </div>
             <div class="create-modify__picture-container">
-                <label for="admin-cover-back" class="create-modify__picture">
-                    <picture><img src="/img/pokemon/pikachu-box.webp" alt=""></picture>
+                <label for="images" class="create-modify__picture">
+                    <picture><img src="/img/pokemon/pikachu-box.webp"></picture>
                     <span>DORSO</span>
                 </label>
-                <input id="admin-cover-back" name="admin-cover-front" accept="image/png,image/jpeg" type="file" required>
             </div>
+        </div>
+        <div class="create-modify__container">
+            <input id="images" name="images" accept="image/*" type="file" multiple required>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <button class="btn">Agregar producto</button>
-                <button class="btn" type="reset">Limpiar</button>
+                <button class="btn" type="submit">Agregar producto</button>
+                <a class="btn" href="/admin">Cancelar</a>
             </div>
         </div>
     </form>

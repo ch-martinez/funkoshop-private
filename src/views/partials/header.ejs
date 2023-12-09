@@ -18,7 +18,7 @@
             </button>
         </div>
         <!------ Menu de navegacion ------>
-        <%if (view.main) {%>
+        <%if (!view.logged) {%>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
                     <span class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></span>
@@ -63,7 +63,7 @@
                     <a class="navbar__link" href="/admin/create">AGREGAR</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/auth/login">SALIR</a>
+                    <a class="navbar__link" href="/auth/logout">SALIR</a>
                 </li>
             </ul>
         <%}%>

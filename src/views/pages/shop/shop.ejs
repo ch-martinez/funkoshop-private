@@ -74,9 +74,9 @@
 
         <!-- Solo listado de items -->
         <ul class="shop__items-list">
-            <% dbProducts.forEach((item) => {%>
+            <% data.forEach((item) => {%>
                 <%- include('../../components/card.ejs', {item: item, glide: false}) %>
-                <%}) %>
+            <%}) %>
         </ul>
 
         <!-- Paginador -->

@@ -1,22 +1,22 @@
 <main class="container container--main">
     <h1 class="container__title">Editar item</h1>
-    <form class="create-modify__form" action="">
+    <form class="create-modify__form" action="/admin/edit/<%= product.product_id %>?_method=PUT" method="POST" enctype="multipart/form-data">
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-categoria">Categoria:</label>
-                <select class="input-select" name="admin-licence" id="">
-                    <option value="none">---</option>
-                    <option value="FC">Figuras coleccionables</option>
+                <label class="label label--admin" for="category_id">Categoria:</label>
+                <select class="input-select" name="category_id" id="">
+                    <option value="0">---</option>
+                    <option value="1" <%if (product.category_id == '1') {%>selected<%}%>>FUNKOS</option>
                 </select>
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-licence">Licencia:</label>
-                <select class="input-select" name="admin-categoria" id="">
-                    <option value="none">---</option>
-                    <option value="STW" <%if (item.licence_id == 'STAR WARS') {%>selected<%}%>>STAR WARS</option>
-                    <option value="PKM" <%if (item.licence_id == 'POKEMON') {%>selected<%}%>>POKEMON</option>
-                    <option value="HPT" <%if (item.licence_id == 'HARRY POTTER') {%>selected<%}%>>HARRY POTTER</option>
+                <label class="label label--admin" for="licence_id">Licencia:</label>
+                <select class="input-select" name="licence_id" id="">
+                    <option value="0">---</option>
+                    <option value="1" <%if (product.licence_id == '1') {%>selected<%}%>>POKEMON</option>
+                    <option value="2" <%if (product.licence_id == '2') {%>selected<%}%>>STAR WARS</option>
+                    <option value="3" <%if (product.licence_id == '3') {%>selected<%}%>>HARRY POTTER</option>
                 </select>
 
             </div>
@@ -24,72 +24,73 @@
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-name">Nombre del producto:</label>
-                <input class="input-text" name="admin-name" type="text" placeholder="Nombre" value="<%= item.product_name %>">
+                <label class="label label--admin" for="product_name">Nombre del producto:</label>
+                <input class="input-text" name="product_name" type="text" placeholder="Nombre" value="<%= product.product_name %>">
             </div>
         </div>
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <textarea class="input-textarea" placeholder="Descripción del producto" name="" id="" cols="30"rows="6"><%= item.product_description %></textarea>
-            </div>
-        </div>
-        <!-- ---------------------- Container row ---------------------- -->
-        <div class="create-modify__container">
-            <div class="create-modify__item">
-                <label class="label label--admin" for="admin-sku">SKU:</label>
-                <input class="input-text" name="admin-sku" type="text" placeholder="XXX00010001" value="<%= item.sku %>">
-            </div>
-            <div class="create-modify__item">
-                <label class="label label--admin" for="admin-price">Precio:</label>
-                <input class="input-number input-hide-arrows" name="admin-price" type="number" min="0"
-                    placeholder="$0.00" value="<%= item.price %>">
-            </div>
-            <div class="create-modify__item">
-                <label class="label label--admin" for="admin-stock">Stock:</label>
-                <input class="input-number input-hide-arrows" name="admin-stock" type="number" min="0"
-                    placeholder="1" value="<%= item.stock %>">
+                <textarea class="input-textarea" placeholder="Descripción del producto" name="product_description" cols="30"rows="6"><%= product.product_description %></textarea>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-discount">Descuento:</label>
-                <input class="input-number input-hide-arrows" name="admin-discount" type="number" min="0"
-                    placeholder="00%" value="<%= item.discount %>">
+                <label class="label label--admin" for="sku">SKU:</label>
+                <input class="input-text" name="sku" type="text" placeholder="XXX00010001" value="<%= product.sku %>">
             </div>
             <div class="create-modify__item">
-                <label class="label label--admin" for="admin-payments">Cuotas:</label>
-                <select class="input-select" name="admin-payments" id="">
+                <label class="label label--admin" for="price">Precio:</label>
+                <input class="input-number input-hide-arrows" name="price" type="number" min="0"
+                    placeholder="$0.00" value="<%= product.price %>">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="stock">Stock:</label>
+                <input class="input-number input-hide-arrows" name="stock" type="number" min="0"
+                    placeholder="1" value="<%= product.stock %>">
+            </div>
+        </div>
+        <!-- ---------------------- Container row ---------------------- -->
+        <div class="create-modify__container">
+            <div class="create-modify__item">
+                <label class="label label--admin" for="discount">Descuento:</label>
+                <input class="input-number input-hide-arrows" name="discount" type="number" min="0"
+                    placeholder="00%" value="<%= product.discount %>">
+            </div>
+            <div class="create-modify__item">
+                <label class="label label--admin" for="dues">Cuotas:</label>
+                <select class="input-select" name="dues" id="">
                     <option value="0" >Sin cuotas</option>
-                    <option value="3" <%if (item.dues == 3) {%>selected<%}%>>3 cuotas</option>
-                    <option value="6" <%if (item.dues == 6) {%>selected<%}%>>6 cuotas</option>
-                    <option value="12" <%if (item.dues == 12) {%>selected<%}%>>12 cuotas</option>
-                    <option value="24" <%if (item.dues == 24) {%>selected<%}%>>24 cuotas</option>
+                    <option value="3" <%if (product.dues == 3) {%>selected<%}%>>3 cuotas</option>
+                    <option value="6" <%if (product.dues == 6) {%>selected<%}%>>6 cuotas</option>
+                    <option value="9" <%if (product.dues == 9) {%>selected<%}%>>9 cuotas</option>
+                    <option value="12" <%if (product.dues == 12) {%>selected<%}%>>12 cuotas</option>
                 </select>
             </div>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__picture-container">
-                <label for="admin-cover-front" class="create-modify__picture">
-                    <picture><img src="<%= item.image_front %>" alt=""></picture>
+                <label for="images" class="create-modify__picture">
+                    <picture><img src="/img/<%= product.image_front %>" alt="<%= product.product_description %>"></picture>
                     <span>FRENTE</span>
                 </label>
-                <input id="admin-cover-front" name="admin-cover-front" accept="image/png,image/jpeg" type="file">
             </div>
             <div class="create-modify__picture-container">
-                <label for="admin-cover-back" class="create-modify__picture">
-                    <picture><img src="<%= item.image_back %>" alt=""></picture>
+                <label for="images" class="create-modify__picture">
+                    <picture><img src="/img/<%= product.image_back %>" alt="<%= product.product_description %>"></picture>
                     <span>DORSO</span>
                 </label>
-                <input id="admin-cover-back" name="admin-cover-front" accept="image/png,image/jpeg" type="file">
             </div>
+        </div>
+        <div class="create-modify__container">
+            <input id="images" name="images" accept="image/*" type="file" multiple>
         </div>
         <!-- ---------------------- Container row ---------------------- -->
         <div class="create-modify__container">
             <div class="create-modify__item">
                 <button class="btn" type="submit">Modificar</button>
-                <a class="btn" href="/pages/admin/admin.html">Cancelar</a>
+                <a class="btn" href="/admin">Cancelar</a>
             </div>
         </div>
     </form>

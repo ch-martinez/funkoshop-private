@@ -30,14 +30,14 @@
                 <th class="table-admin__data--head table-admin__data" colspan="2">Categoria</th>
             </tr>
             <tbody id="tbody">
-                <% dbProducts.forEach((item) => {%>
+                <% products.forEach((product) => {%>
                     <tr class="table-admin__row">
-                        <td class="table-admin__data"><%= item.product_id %></td>
-                        <td class="table-admin__data"><%= item.sku %></td>
-                        <td class="table-admin__data"><%= item.product_name %></td>
-                        <td class="table-admin__data"><%= item.product_licence_id %></td>
+                        <td class="table-admin__data"><%= product.product_id %></td>
+                        <td class="table-admin__data"><%= product.sku %></td>
+                        <td class="table-admin__data"><%= product.product_name %></td>
+                        <td class="table-admin__data"><%= product.licence_name %></td>
                         <td class="table-admin__data">
-                            <a class="table-admin__btn" href="/admin/edit/<%= item.product_id %>">
+                            <a class="table-admin__btn" href="/admin/edit/<%= product.product_id %>">
                                 <img src="/img/icons/edit_pencil.svg" alt="Editar item">
                             </a>
                             <a class="table-admin__btn" href="#">
@@ -50,10 +50,10 @@
 
             <dialog class="alert-delet">
                 <form id="alert-delet__form" method="POST">
-                    <p class="alert-delet__text">¿Eliminar el item <span></span>?</p>
+                    <p class="alert-delet__text">¿Eliminar el producto <span></span>?</p>
                     <menu class="alert-delet__buttons-container">
                         <button class="btn btn--admin-confirm" type="submit">Confirmar</button>
-                        <button class="btn btn--admin-delet" type="reset ">Cancelar</button>
+                        <button class="btn btn--admin-delet" type="reset">Cancelar</button>
                     </menu>
                 </form>
             </dialog>

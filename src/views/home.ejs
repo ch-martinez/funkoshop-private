@@ -16,7 +16,7 @@
                 <h3 class="collection__title">star wars & the mandalorian</h3>
                 <p class="collection__description">Disfruta de una saga que sigue agregando personajes a su colección.</p>
                 <hr class="collection__line">
-                <a class="btn-link-rounded" href="/pages/shop/starwars.html">Ver colección</a>
+                <a class="btn-link-rounded" href="/shop/?licence=2">Ver colección</a>
             </section>
             <picture class="collection__picture">
                 <img src="/img/star-wars/baby-yoda-1.webp" alt="">
@@ -28,7 +28,7 @@
                 <h3 class="collection__title">pokemon indigo</h3>
                 <p class="collection__description">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
                 <hr class="collection__line">
-                <a class="btn-link-rounded" href="/pages/shop/pokemon.html">Ver colección</a>
+                <a class="btn-link-rounded" href="/shop/?licence=1">Ver colección</a>
             </section>
             <picture class="collection__picture">
                 <img src="/img/pokemon/vulpix-1.webp" alt="">
@@ -40,7 +40,7 @@
                 <h3 class="collection__title">harry potter</h3>
                 <p class="collection__description">Revive los recuerdos de una saga llena de magia y encanto.</p>
                 <hr class="collection__line">
-                <a class="btn-link-rounded" href="/pages/shop/harrypotter.html">Ver colección</a>
+                <a class="btn-link-rounded" href="/shop/?licence=3">Ver colección</a>
             </section>
             <picture class="collection__picture">
                 <img src="/img/harry-potter/snape-patronus-1.webp" alt="">
@@ -52,7 +52,7 @@
     <section class="glide glide--carousel">
         <h2 class="glid__title">ÚLTIMOS LANZAMIENTOS<h2>
         <!-- Slide de cards -->
-        <%- include('components/glide.ejs', {dbProducts} )%>
+        <%- include('components/glide.ejs', {products} )%>
         <!-- FLechas de contol slide -->
         <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="octicon:chevron-up-12" rotate="270deg"></iconify-icon></button>

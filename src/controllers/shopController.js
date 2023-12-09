@@ -1,30 +1,53 @@
-const items = require('../services/itemsServices')
+const {
+    getAllProductsFromDB,
+    getAllProductsFilterFromDB,
+    getProductFromDB,
+} = require('../models/productsModels')
 
-const mainView = (req,res) => {
+const mainView = async (req,res) => {
     const view = {
         title: 'Shop - FS',
-        main: true
+        logged: req.session.isLog,
     }
-    const dbProducts = items.getAllItems()
-    res.render('pages/shop/shop', {view, dbProducts})
+    try {
+        if (req.query.licence){
+            const data = await getAllProductsFilterFromDB(req.query.licence)
+            res.render('pages/shop/shop', {view, data})
+        }else{
+            const data = await getAllProductsFromDB()
+            res.render('pages/shop/shop', {view, data})
+        }
+    } catch (error) {
+        console.log(`Error getting products: ${error}`)
+        res.status(500).res(`Internal server error ${error}`)
+    }
 }
 
-const itemView = (req,res) => {
-    const dbProducts = items.getAllItems()
-    const item = items.getItem(req.params.id)
-    const view = {
-        title: `${item.product_name} - FS`,
-        main: true,
-        glide: true
+const itemView = async (req,res) => {
+    try {
+        const [product] = await getProductFromDB(req.params.id)
+        const products = await getAllProductsFromDB()
+        const view = await {
+            title: `${product.product_name} - FS`,
+            logged: req.session.isLog,
+            glide: true
+        }
+        res.render('pages/shop/item', {view, product, products})
+    } catch (error) {
+        console.log(`Error getting products: ${error}`)
+        res.status(500).res(`Internal server error ${error}`)
     }
-   res.render('pages/shop/item', {view, item, dbProducts})
 } 
 
-const itemAddCart = (req,res) => res.send(`Pagina ITEM ${req.params.id} añadido a carrito`)
+const itemAddCart = (req,res) => {
+    console.log
+    res.send(`Pagina ITEM ${req.body} añadido a carrito`)
+}
+
 const cartView =(req,res) => {
     const view = {
         title: 'Carrito - FS',
-        main: true
+        logged: req.session.isLog
     }
     res.render('pages/shop/cart', {view})
 }

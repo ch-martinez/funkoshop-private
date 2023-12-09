@@ -26,8 +26,6 @@ const ejsLayaouts = require('express-ejs-layouts')
 app.use(ejsLayaouts)
 app.set('layout', 'layouts/layout')
 
-
-
 /* Middlewares */
 app.use(express.urlencoded({extended:false})) //Permite obtener la informacion de un formulario
 app.use(express.json()) //Permite leer json - dev
@@ -45,5 +43,7 @@ app.use('/', mainRoutes)
 app.use('/auth', authRoutes)
 app.use('/admin', adminRoutes)
 app.use('/shop', shopRoutes)
-
+app.use('', (req,res,next)=>{
+    res.render('404',view = {title: 'No encontrada',logged: req.session.isLog,glide: false});
+})
 app.listen(PORT, () => {console.log(`Server iniciado en: http://localhost:${PORT}`)})
